@@ -1,0 +1,177 @@
+.all-popular-products{
+    display: flex;
+    flex-wrap: nowrap;
+}
+.pupular-products-sect > h2 {
+font-weight: 500;
+font-size: 24px;
+line-height: 33.6px;
+}
+.popular-products-title-div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.turn-products-div{
+    display: flex;
+}
+.turn-left-btn, .turn-right-btn{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+   float: right;
+   border: 1px solid #D8D8D8;
+   border-radius:50%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   color: #D8D8D8;
+}
+.turn-right-btn{
+    color: #80C5FF;
+    border: 1px solid #80C5FF;
+
+}
+.popular-product-div1{
+    padding-top: 10px;
+}
+.popular-product-photo1{
+    width: 295px;
+    height: 218px;
+    background: url(../Super-App-Project-3rd-Team/photos/popular-product-1.jpeg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.heart-icon-div{
+    width: 32px;
+    height: 32px;
+    float: right;
+    border: 1px solid #EFEFEF;
+    border-radius:50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.fa-heart{
+    color: #6D6E70;
+    font-size: 15px;
+}
+.percentage-box{
+    Width: 38px;
+    height: 20px;
+    border-radius: 8px;
+    background-color: #FF3333;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*font-family: inter;
+    */
+}
+.prise-line-through{
+    text-decoration: line-through;
+    font-size: 20px;
+    margin-left: 20px;
+}
+.popular-products-main-div h3{
+    font-weight: 400;
+    font-size: 14px;
+}
+.evaluate-star-icon::after{
+    content: '\2605 5.0';
+    color: #717D96;
+    margin-left: 65px;
+   
+}
+.add-to-basket-btn{
+       width: 263px;
+       height: 40px;
+       background-color: #008BFF;
+       border: none;
+       border-radius: 6px;
+       color: #FFFFFF;
+       font-size: 14px;
+       font-weight: 600;
+      
+}
+.popular-product-photo2{
+    width: 295px;
+    height: 218px;
+    background: url(../Super-App-Project-3rd-Team/photos/popular-product-2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.popular-product-photo3{
+    width: 295px;
+    height: 218px;
+    background: url(../Super-App-Project-3rd-Team/photos/popular-product-3.jpeg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.popular-product-photo4{
+    width: 295px;
+    height: 218px;
+    background: url(../Super-App-Project-3rd-Team/photos/popular-product-4.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.popular-product-photo5{
+    width: 295px;
+    height: 218px;
+    background: url(../Super-App-Project-3rd-Team/photos/popular-product-5.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.popular-product-photo6{
+    width: 295px;
+    height: 218px;
+    background: url(../Super-App-Project-3rd-Team/photos/popular-product-6.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.popular-product-photo7{
+    width: 295px;
+    height: 218px;
+    background: url(../Super-App-Project-3rd-Team/photos/popular-product-7.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.popular-product-photo8{
+    width: 295px;
+    height: 218px;
+    background: url(../Super-App-Project-3rd-Team/photos/popular-product-8.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.popular-product-photo9{
+    width: 295px;
+    height: 218px;
+    background: url(../Super-App-Project-3rd-Team/photos/popular-product-9.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.popular-product-photo10{
+    width: 295px;
+    height: 218px;
+    background: url(../Super-App-Project-3rd-Team/photos/popular-product-10.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.popular-product-photo11{
+    width: 295px;
+    height: 218px;
+    background: url(../Super-App-Project-3rd-Team/photos/popular-product-11.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.popular-product-photo12{
+    width: 295px;
+    height: 218px;
+    background: url(../Super-App-Project-3rd-Team/photos/popular-product-12.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
