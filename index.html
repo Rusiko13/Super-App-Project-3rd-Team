@@ -11,21 +11,175 @@
     <title>Super App Project</title>
   </head>
   <body>
+    <!-- იზას ნაწილის დასაწყისი -->
+    <header>
+      <div class="center-div">
+          <div class="center-div-top">
+              <div class="logo">
+                  <img src="Image/ShopEasy.png" alt="">
+              </div>
+              <div class="search">
+                  <input type="text" placeholder="ძიება">
+                  <img src="Image/Icon Right.png" alt="">
+              </div>
+              <div class="center-div-top-buttons">
+                  <div class="center-div-top-buttons-icons">
+                      <img src="Image/cart-shopping.png" alt="">
+                  </div>
+                  <div class="center-div-top-buttons-icons">
+                      <img src="Image/Frame 1.png" alt="">
+                  </div>
+                  <div class="center-div-top-buttons-login">
+                      <button>შესვლა</button>
+                  </div>
+                  
+              </div>
+              <div class="hidden-button">
+                  <a href="javascript:void(0)">
+                      <img src="Image/icon-align-justify.png" alt="Menu">
+                  </a>
+              </div>
+              <div class="menu-container" id="menuContainer">
+                  <div class="menu-header">
+                      <!-- <span>Menu</span> -->
+                      <button id="closeButton">&times;</button>
+                  </div>
+                  <ul id="menuList"></ul>
+              </div>
+         </div>
+         <div class="center-div-lower">
+          <div class="center-div-lower-main">
+              <div class="burger-menu" id="burger-menu">
+                  <div>
+                      <img src="Image/icon-align-justify.png" alt="">
+                  </div>
+                  <span>ყველა კატეგორია</span>
+              </div>
+              <div class="carousel-wrap">
+                  <div class="carousel" id="carousel">
+                      <div class="carousel-slide" >
+                          <div class="carousel-item"><a href="">ფასდაკლება</a></div>
+                          <div class="carousel-item"><a href="">ტექნიკა</a></div>
+                          <div class="carousel-item"><a href="">ბავშვის მოვლა</a></div>
+                          <div class="carousel-item"><a href="">სახლი & მოვლა</a></div>
+                          <div class="carousel-item"><a href="">თავის მოვლა</a></div>
+                          <div class="carousel-item"><a href="">სათამაშოები</a></div>
+                          <div class="carousel-item"><a href="">ფიტნესი</a></div>
+                      </div>
+                      <div class="carousel-slide" >
+                          <div class="carousel-item"><a href="">ბარი & სხვა</a></div>
+                          <div class="carousel-item" id="xx"><a href="">წვეულება</a></div>
+                          <div class="carousel-item"><a href="">წიგნები</a></div>
+                          <div class="carousel-item"><a href="">ცხოველების მოვლა</a></div>
+                          <div class="carousel-item"><a href="">დასვენება & მოგზაურობა</a></div>
+                          <div class="carousel-item"><a href="">ჯანმრთელობა</a></div>
+                          <div class="carousel-item" id="xx"><a href="">ეზო & მცენარეების მოვლა</a></div>
+                      </div>
+                  </div>
+                  <button class="carousel-nav prev" onclick="prevSlide()">&#10094;</button>
+                  <button class="carousel-nav next" onclick="nextSlide()">&#10095;</button>
+              </div>
+              
+          </div>
+      </div> 
+  </header>
+  <div class="category-section" id="category-section">
+      <div class="cancel-icon"><img src="Image/icon-x.png" alt=""></div>
+  <div class="scrollable-content">
+      
+  </div>
+  </div>
+  <section class="sale-slider">
+      <div class="sale-slider-center1 slide">
+          <div class="sale-slider-center-left">
+                  <div>
+                      <h1>შექმენით უნიკალური ნამუშევრები</h1>
+                  </div>
+                  <div>
+                      <h4>შეიძინეთ თიხით ძერწვისთვის საჭირო მასალა</h4>
+                  </div>
+                  <div class="slider-Icon">
+                      <a href="">დაიწყე შოპინგი</a>
+                      <img src="Image/slider-Icon Right.png" alt="">
+                  </div>
+              
+          </div>
+      </div>
+      <div class="sale-slider-center2 slide">
+          <div class="sale-slider-center-left">
+              <div class="sale-slider-center-left-main">
+                  <div>
+                      <h1>დაზოგე 80%-მდე საზაფხულო ასორტიმენტზე</h1>
+                  </div>
+                  <div>
+                      <h4>შეიძინე ყველაფერი შენი სახლისთვის, საუკეთესო <br>ფასად</h4>
+                  </div>
+                  <div class="slider-Icon">
+                      <a href="">სრულად სანახავად</a>
+                      <img src="Image/slider-Icon Right.png" alt="">
+                  </div>
+              </div>
+          </div>
+          <div class="sale-slider-center-right">
+              <img src="Image/sale-slider-image2.png" alt="">
+          </div>
+      </div>
+      <div class="sale-slider-center3 slide">
+          <div class="sale-slider-center-left">
+               <div>
+                   <h1>ყველაფერი თქვენი ოთახის ყვავილებისთვის</h1>
+              </div>
+              <div>
+                  <h4>იზრუნეთ მათზე სიყვარულით</h4>
+              </div>
+          </div>
+          
+      </div>
+      <div class="senter-buttons">
+      <button class="sale-slider-button prev" onclick="plusSlides(-1)">&#10094;</button>
+      <button class="sale-slider-button next" onclick="plusSlides(1)">&#10095;</button>
+      </div>
+      <div class="sale-slider-dot">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+  </section>
+  <section class="everything-event">
+      <div class="everything-event-center">
+
+          <div class="everything-event-detail">
+              <div>
+                  <h2>ყველაფერი დაუვიწყარი საზაფხულო<br> წვეულებებისთვის</h2>
+              </div>
+              <div> 
+                  <span>შეიძინე ჩვენთან საუკეთესო ფასად</span>
+              </div>
+              <div class="everything-event-Icon">
+                  <a href="">სრულად სანახავად</a>
+                  <img src="Image/everything-event-Icon.png" alt="">
+              </div>
+             
+
+          </div>
+      </div>
+  </section>
+    <!-- იზას ნაწილის დასასრული -->
     <!-- ყველაზე მოთხოვნადი პროდუქცია -->
     <section class="popular-products-sect">
       <div class="popular-products-title-div">
       <h2>ყველაზე მოთხოვნადი პროდუქცია</h2> 
       <div class="turn-products-div">
         <span>სრულად</span>
-        <div class="turn-left-btn"><i class="fa-solid fa-less-than"></i></div>
-        <div class="turn-right-btn"><i class="fa-solid fa-greater-than"></i></div>
+        <button class="turn-left-btn" id="left-button"><i class="fa-solid fa-less-than"></i></button>
+        <button class="turn-right-btn" id="right-button"><i class="fa-solid fa-greater-than"></i></button>
 
       </div>
     </div>
       <div class="all-popular-products">
       <div class="popular-products-main-div">
         <div class="popular-products-div1">
-          <div class="popular-product-photo1">
+          <div class="popular-product-photo popular-product-photo1">
             <div class="heart-icon-div"><i class="fa-regular fa-heart"></i></div>  </div>
         </div>
             <div class="percentage-box">50%</div>
@@ -37,7 +191,7 @@
       </div>
       <div class="popular-products-main-div">
         <div class="popular-products-div1">
-          <div class="popular-product-photo2">
+          <div class="popular-product-photo popular-product-photo2">
             <div class="heart-icon-div"><i class="fa-regular fa-heart"></i></div>  </div>
         </div>
         <h2>SeaGrass</h2>
@@ -48,7 +202,7 @@
       </div>
       <div class="popular-products-main-div">
         <div class="popular-products-div1">
-          <div class="popular-product-photo3">
+          <div class="popular-product-photo popular-product-photo3">
             <div class="heart-icon-div"><i class="fa-regular fa-heart"></i></div>  </div>
         </div>
             
@@ -61,7 +215,7 @@
       </div>
       <div class="popular-products-main-div">
         <div class="popular-products-div1">
-          <div class="popular-product-photo4">
+          <div class="popular-product-photo popular-product-photo4">
             <div class="heart-icon-div"><i class="fa-regular fa-heart"></i></div>  </div>
         </div>
         <h2>Apple AirPods  Wireless </h2>
@@ -87,7 +241,7 @@
         <div class="all-popular-products">
         <div class="popular-products-main-div">
           <div class="popular-products-div1">
-            <div class="popular-product-photo5">
+            <div class="popular-product-photo popular-product-photo5">
               <div class="heart-icon-div"><i class="fa-regular fa-heart"></i></div>  </div>
           </div>
           <h2>STANLEY 1913 </h2>
@@ -98,7 +252,7 @@
         </div>
         <div class="popular-products-main-div">
           <div class="popular-products-div1">
-            <div class="popular-product-photo6">
+            <div class="popular-product-photo popular-product-photo6">
               <div class="heart-icon-div"><i class="fa-regular fa-heart"></i></div>  </div>
           </div>
           <h2>Fridababy თერმომეტრი</h2>
@@ -109,7 +263,7 @@
         </div>
         <div class="popular-products-main-div">
           <div class="popular-products-div1">
-            <div class="popular-product-photo7">
+            <div class="popular-product-photo popular-product-photo7">
               <div class="heart-icon-div"><i class="fa-regular fa-heart"></i></div>  </div>
           </div>
           <h2>Kindle Paperwhite</h2>
@@ -120,7 +274,7 @@
         </div>
         <div class="popular-products-main-div">
           <div class="popular-products-div1">
-            <div class="popular-product-photo8">
+            <div class="popular-product-photo popular-product-photo8">
               <div class="heart-icon-div"><i class="fa-regular fa-heart"></i></div>  </div>
           </div>
           <h2>Ninja CREAMi </h2>
@@ -145,7 +299,7 @@
         <div class="all-popular-products">
         <div class="popular-products-main-div">
           <div class="popular-products-div1">
-            <div class="popular-product-photo9">
+            <div class="popular-product-photo popular-product-photo9">
               <div class="heart-icon-div"><i class="fa-regular fa-heart"></i></div>  </div>
           </div>
              
@@ -157,7 +311,7 @@
         </div>
         <div class="popular-products-main-div">
           <div class="popular-products-div1">
-            <div class="popular-product-photo10">
+            <div class="popular-product-photo popular-product-photo10">
               <div class="heart-icon-div"><i class="fa-regular fa-heart"></i></div>  </div>
           </div>
           <h2>Knotted Rope LED Lamp</h2>
@@ -168,7 +322,7 @@
         </div>
         <div class="popular-products-main-div">
           <div class="popular-products-div1">
-            <div class="popular-product-photo11">
+            <div class="popular-product-photo popular-product-photo11">
               <div class="heart-icon-div"><i class="fa-regular fa-heart"></i></div>  </div>
           </div>
           <h2>Koopman ჩარჩო</h2>
@@ -179,7 +333,7 @@
         </div>
         <div class="popular-products-main-div">
           <div class="popular-products-div1">
-            <div class="popular-product-photo12">
+            <div class="popular-product-photo popular-product-photo12">
               <div class="heart-icon-div"><i class="fa-regular fa-heart"></i></div>  </div>
           </div>
           <div class="percentage-box">30%</div>
