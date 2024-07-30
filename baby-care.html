@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ბავშვის მოვლა</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="center-div">
+            <div class="center-div-top">
+                <div class="logo">
+                    <img src="Image/ShopEasy.png" alt="">
+                </div>
+                <div class="search">
+                    <input type="text" placeholder="ძიება">
+                    <img src="Image/Icon Right.png" alt="">
+                </div>
+                <div class="center-div-top-buttons">
+                    <div class="center-div-top-buttons-icons">
+                        <img src="Image/cart-shopping.png" alt="">
+                    </div>
+                    <div class="center-div-top-buttons-icons">
+                        <img src="Image/Frame 1.png" alt="">
+                    </div>
+                    <div class="center-div-top-buttons-login">
+                        <button>შესვლა</button>
+                    </div>
+                    
+                </div>
+                <div class="hidden-button">
+                    <a href="javascript:void(0)">
+                        <img src="Image/icon-align-justify.png" alt="Menu">
+                    </a>
+                </div>
+                <div class="menu-container" id="menuContainer">
+                    <div class="menu-header">
+                        <button id="closeButton">&times;</button>
+                    </div>
+                    <ul id="menuList"></ul>
+                </div>
+           </div>
+           <div class="center-div-lower">
+            <div class="center-div-lower-main">
+                <div class="burger-menu" id="burger-menu">
+                    <div>
+                        <img src="Image/icon-align-justify.png" alt="">
+                    </div>
+                    <span>ყველა კატეგორია</span>
+                </div>
+                <div class="carousel-wrap">
+                    <div class="carousel" id="carousel">
+                        <div class="carousel-slide" >
+                            <div class="carousel-item"><a href="">ფასდაკლება</a></div>
+                            <div class="carousel-item"><a href="">ტექნიკა</a></div>
+                            <div class="carousel-item"><a href="">ბავშვის მოვლა</a></div>
+                            <div class="carousel-item"><a href="">სახლი & მოვლა</a></div>
+                            <div class="carousel-item"><a href="">თავის მოვლა</a></div>
+                            <div class="carousel-item"><a href="">სათამაშოები</a></div>
+                            <div class="carousel-item"><a href="">ფიტნესი</a></div>
+                        </div>
+                        <div class="carousel-slide" >
+                            <div class="carousel-item"><a href="">ბარი & სხვა</a></div>
+                            <div class="carousel-item" id="xx"><a href="">წვეულება</a></div>
+                            <div class="carousel-item"><a href="">წიგნები</a></div>
+                            <div class="carousel-item"><a href="">ცხოველების მოვლა</a></div>
+                            <div class="carousel-item"><a href="">დასვენება & მოგზაურობა</a></div>
+                            <div class="carousel-item"><a href="">ჯანმრთელობა</a></div>
+                            <div class="carousel-item" id="xx"><a href="">ეზო & მცენარეების მოვლა</a></div>
+                        </div>
+                    </div>
+                    <button class="carousel-nav prev" onclick="prevSlide()">&#10094;</button>
+                    <button class="carousel-nav next" onclick="nextSlide()">&#10095;</button>
+                </div>
+                
+            </div>
+        </div> 
+    </header>
+    <div class="category-section" id="category-section">
+        <div class="cancel-icon"><img src="Image/icon-x.png" alt=""></div>
+    <div class="scrollable-content">
+        
+    </div>
+    </div>
+    <section class="baby-care-sale">
+        <div class="baby-care-sale-container">
+            <div class="baby-care-sale-container-head">
+                <h2>-50% ფასდაკლება ბავშვის ტანსაცმელზე</h2>
+                <a href="">სრულად</a>
+            </div>
+            <div class="baby-card-container" id="babycardContainer"></div>
+        </div>
+    </section>
+    <section class="baby-care-popular">
+        <div class="baby-care-popular-container">
+            <div class="baby-care-popular-container-head">
+                <h2>ყველაზე მოთხოვნადი პროდუქცია</h2>
+                <a href="">სრულად</a>
+            </div>
+            <div class="baby-popular-card-container" id="babypopularcardContainer"></div>
+        </div>
+    </section>
+    <section class="baby-care-sea">
+        <div class="baby-care-sea-container">
+            <div class="baby-care-sea-container-head">
+                <h2>ზღვისთვის საჭირო პროდუქცია</h2>
+                <a href="">სრულად</a>
+            </div>
+            <div class="baby-sea-card-container" id="babyseacardContainer"></div>
+        </div>
+    </section>
+    
+    
+    <script src="js/header-nav.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/mobile-burger-menu.js"></script>
+    <script src="js/baby-care.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</body>
+</html>
