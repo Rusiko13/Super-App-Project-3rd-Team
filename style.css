@@ -31,7 +31,7 @@ header {
 }
 .center-div {
   border-bottom: 1px solid #cbd2e0;
-  padding: 24px 100px;
+  padding: 24px 70px;
 }
 .center-div-top {
   column-gap: 60px;
@@ -66,6 +66,7 @@ header {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  column-gap: 10px;
 }
 .center-div-top-buttons-icons img {
   width: 27px;
@@ -97,7 +98,7 @@ header {
 }
 .burger-menu span {
   color: #000000;
-  font-size: 16px;
+  font-size: 15px;
 }
 /* carousel */
 
@@ -234,6 +235,7 @@ header.disabled {
 
 .sale-slider {
   width: 100%;
+  margin-top: 20px;
   font-family: "figaro300";
 }
 
@@ -243,7 +245,7 @@ header.disabled {
   display: none;
   flex: 1;
   height: 376px;
-  padding: 40px 100px;
+  padding: 0px 100px;
   border-radius: 10px;
 }
 
@@ -555,6 +557,9 @@ header.disabled {
   }
   .logo img {
     max-width: 75px;
+  }
+  .sale-slider {
+    margin-top: 0px;
   }
   .sale-slider-center1,
   .sale-slider-center2,
