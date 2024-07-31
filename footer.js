@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
   loadContent("footer.html", "footer");
-  loadContent("html_pages/contact.html", "contactSection");
+  loadContent("footer.html", "pool_section");
 });
 
 function loadContent(page, elementId) {
