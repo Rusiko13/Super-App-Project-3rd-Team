@@ -298,6 +298,7 @@ header.disabled {
     background-size: cover;
     background-repeat: no-repeat;
     padding-left: 40px;
+    padding-bottom: 50px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
