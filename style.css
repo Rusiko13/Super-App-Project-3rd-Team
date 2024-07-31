@@ -93,12 +93,12 @@ header {
 .burger-menu {
   display: flex;
   width: 14%;
-  justify-content: space-between;
+ column-gap: 5px;
   cursor: pointer;
 }
 .burger-menu span {
   color: #000000;
-  font-size: 15px;
+  font-size: 14px;
 }
 /* carousel */
 
