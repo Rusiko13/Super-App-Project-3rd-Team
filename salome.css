@@ -1,0 +1,96 @@
+footer {
+  padding: 20px 0;
+}
+
+.footer-container,
+.pool-section,
+.popular_brends_section {
+  max-width: 1230px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  /* border: 1px solid #ccc; */
+  border-radius: 10px;
+}
+
+.footer-section {
+  flex: 1;
+  padding: 0 15px;
+}
+
+.footer-section h4 {
+  margin-bottom: 10px;
+}
+
+.footer-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 8px;
+}
+
+.footer-section ul li a {
+  text-decoration: none;
+  color: #000;
+}
+
+.footer-section p {
+  margin: 5px 0;
+}
+
+.social-media a {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.social-media img {
+  margin-top: 20px;
+  width: 24px;
+  height: 24px;
+}
+.app-links {
+  display: flex;
+  flex-direction: column;
+}
+.store {
+  max-width: 180px;
+  height: 52px;
+  margin-top: 35px;
+}
+.app-links a {
+  display: inline-block;
+  margin-right: 10px;
+}
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-section {
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-section {
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-section {
+    max-width: 100%;
+    text-align: center;
+    padding: 10px;
+  }
+  .social-media a,
+  .app-links a {
+    margin: 5px;
+  }
+}
