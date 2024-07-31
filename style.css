@@ -268,7 +268,7 @@ header.disabled {
 }
 .sale-slider-center1 .sale-slider-center-left {
     width: 100%;
-    background-image: url("../Image/sale-slider-image1.png"); 
+    background-image: url("../Super-App-Project-3rd-Team/Image/sale-slider-image1.png"); 
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -291,7 +291,7 @@ header.disabled {
 }
 .sale-slider-center3 .sale-slider-center-left {
     width: 100%;
-    background-image: url("../Image//sale-slider-image3.png"); 
+    background-image: url("../Super-App-Project-3rd-Team/Image//sale-slider-image3.png"); 
     background-size: cover;
     background-repeat: no-repeat;
     padding-left: 40px;
@@ -392,7 +392,7 @@ header.disabled {
    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    background-image: url("../Image/everything-event-image.png"); 
+    background-image: url("../Super-App-Project-3rd-Team/Image/everything-event-image.png"); 
 } 
 .everything-event-detail{
     height: 90%;
@@ -564,7 +564,7 @@ header.disabled {
   .sale-slider-center1 .sale-slider-center-left {
     /* width: 340px ;
         height:150px; */
-        background-image: url(../Image/sale-slider-image1.png);
+        background-image: url(../Super-App-Project-3rd-Team/Image/sale-slider-image1.png);
         background-size: cover;
         background-repeat: no-repeat;
         
