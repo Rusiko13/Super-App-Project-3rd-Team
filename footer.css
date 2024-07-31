@@ -185,3 +185,91 @@ footer {
 /*  */
 /* end fool section */
 /*  */
+
+/* salome 's section */
+/*  popular brends section */
+.popular_brends {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.popular_brens_title {
+  text-align: left;
+  margin-bottom: 24px;
+  font-weight: 500;
+  line-height: 34ps;
+  color: #333;
+  font-size: 2em;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.flex-item {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  flex: 1 1 calc(33.333% - 20px);
+  max-width: calc(33.333% - 20px);
+  position: relative;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.hape {
+  background-color: #e7d1ee;
+  max-width: 715px;
+  height: 583px;
+}
+.dyson {
+  background-color: #ffe393;
+  max-width: 505px;
+  height: 285px;
+}
+.greenpan {
+  background-color: #d8e4c2;
+  max-width: 505px;
+  height: 285px;
+}
+.flex-item img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+  border-radius: 8px;
+}
+
+.label {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.flex-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 900px) {
+  .flex-item {
+    flex: 1 1 calc(50% - 20px);
+    max-width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 600px) {
+  .flex-item {
+    flex: 1 1 100%;
+    max-width: 100%;
+    padding: 10px;
+  }
+
+  .arrow {
+    bottom: 10px;
+    right: 10px;
+  }
+}
+/* end salome 's section */
+/* end popular brends section */
