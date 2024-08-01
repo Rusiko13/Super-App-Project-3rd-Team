@@ -117,24 +117,36 @@ body {
 /* footer section */
 /*  */
 footer {
-  padding: 20px 0;
+  /* padding: 20px 0; */
 }
 
-.footer-container,
-.pool-section,
-.popular_brends_section {
+.footer,
+.pool,
+.popularbrend {
   /* max-width: 1400px; */
-  max-width: 100%;
+  width: 100%;
   margin: 0 auto;
-  /* margin-left: 100px;
-  margin-right: 100px; */
   display: flex;
   justify-content: space-between;
   padding: 20px;
   border-radius: 10px;
 }
-.footer-section {
-  margin: 24px 100px;
+.footer-container,
+.pool-section {
+  /* margin: 90%; */
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+  /* margin-left: 100px;
+  margin-right: 100px; */
+}
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+}
+.popular_brends {
+  width: 90%;
+  margin: 0 auto;
 }
 .help_section {
   margin-right: 10px;
@@ -189,7 +201,6 @@ footer {
 .store {
   max-width: 180px;
   height: 52px;
-  margin-top: 25px;
 }
 .app-links a {
   display: inline-block;
@@ -224,11 +235,11 @@ footer {
     margin: 5px;
   }
 }
-
+/* 
 .popular_brends {
   margin: 24px 100px;
   padding: 20px;
-}
+} */
 
 .popular_brens_title {
   text-align: left;
