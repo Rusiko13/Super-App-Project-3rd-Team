@@ -25,6 +25,7 @@ body {
 }
 
 .product-card {
+  margin: 24px 100px;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s;
@@ -123,7 +124,7 @@ footer {
 .pool-section,
 .popular_brends_section {
   /* max-width: 1400px; */
-  width: 100%;
+  max-width: 100%;
   margin: 0 auto;
   /* margin-left: 100px;
   margin-right: 100px; */
@@ -132,7 +133,9 @@ footer {
   padding: 20px;
   border-radius: 10px;
 }
-
+.footer-section {
+  margin: 24px 100px;
+}
 .help_section {
   margin-right: 10px;
   width: 314px;
@@ -223,8 +226,7 @@ footer {
 }
 
 .popular_brends {
-  max-width: 1240px;
-  margin: 0 auto;
+  margin: 24px 100px;
   padding: 20px;
 }
 
