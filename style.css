@@ -292,7 +292,7 @@ header.disabled {
 }
 .sale-slider-center1 .sale-slider-center-left .slider-Icon {
   background-color: #ffffff;
-  margin-top: 50px;
+  margin-top: 10px;
 }
 .sale-slider-center1 .sale-slider-center-left .slider-Icon a {
   color: #008bff;
@@ -590,6 +590,10 @@ header.disabled {
         row-gap: 5px;
         font-size: 10px;
         justify-content: center;
+    }
+    .sale-slider-center1 .sale-slider-center-left .slider-Icon {
+      background-color: #ffffff;
+      margin-top: 50px;
     }
     .sale-slider-button{
         display: none;
