@@ -31,10 +31,10 @@ header {
 }
 .center-div {
   border-bottom: 1px solid #cbd2e0;
-  padding: 24px 70px;
+  padding: 24px 100px;
 }
 .center-div-top {
-  column-gap: 60px;
+  column-gap: 100px;
   display: flex;
   align-items: center;
 }
@@ -44,7 +44,7 @@ header {
 }
 
 .search input {
-  width: 90%;
+  width: 100%;
   padding: 11px 12px;
   border-style: solid;
   border-radius: 6px;
@@ -69,10 +69,13 @@ header {
   column-gap: 10px;
 }
 .center-div-top-buttons-icons img {
-  width: 27px;
+  width: 24px;
+}
+.center-div-top-buttons-login{
+  width: 70%;
 }
 .center-div-top-buttons-login button {
-  width: 190px;
+  width: 100%;
   background-color: #008bff;
   color: #ffffff;
   font-size: 18px;
@@ -92,8 +95,7 @@ header {
 }
 .burger-menu {
   display: flex;
-  width: 14%;
-  justify-content: space-between;
+  width: 15%;
   cursor: pointer;
 }
 .burger-menu span {
@@ -116,6 +118,7 @@ header {
 .carousel-slide {
   display: flex;
   min-width: 100%;
+  /* column-gap: 60px; */
   justify-content: space-evenly;
 }
 
@@ -276,9 +279,11 @@ header.disabled {
     background-repeat: no-repeat;
     background-position: center;
     padding-left: 40px;
+    padding-bottom: 50px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
+    row-gap: 30px;
 }
 
 .sale-slider-center1,
