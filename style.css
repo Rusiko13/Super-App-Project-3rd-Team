@@ -34,7 +34,7 @@ header {
   padding: 24px 100px;
 }
 .center-div-top {
-  column-gap: 60px;
+  column-gap: 100px;
   display: flex;
   align-items: center;
 }
@@ -44,7 +44,7 @@ header {
 }
 
 .search input {
-  width: 90%;
+  width: 100%;
   padding: 11px 12px;
   border-style: solid;
   border-radius: 6px;
@@ -66,12 +66,16 @@ header {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  column-gap: 10px;
 }
 .center-div-top-buttons-icons img {
-  width: 27px;
+  width: 24px;
+}
+.center-div-top-buttons-login{
+  width: 70%;
 }
 .center-div-top-buttons-login button {
-  width: 190px;
+  width: 100%;
   background-color: #008bff;
   color: #ffffff;
   font-size: 18px;
@@ -91,13 +95,12 @@ header {
 }
 .burger-menu {
   display: flex;
-  width: 14%;
-  justify-content: space-between;
+  width: 15%;
   cursor: pointer;
 }
 .burger-menu span {
   color: #000000;
-  font-size: 16px;
+  font-size: 14px;
 }
 /* carousel */
 
@@ -115,6 +118,7 @@ header {
 .carousel-slide {
   display: flex;
   min-width: 100%;
+  /* column-gap: 60px; */
   justify-content: space-evenly;
 }
 
@@ -234,6 +238,7 @@ header.disabled {
 
 .sale-slider {
   width: 100%;
+  margin-top: 20px;
   font-family: "figaro300";
 }
 
@@ -243,7 +248,7 @@ header.disabled {
   display: none;
   flex: 1;
   height: 376px;
-  padding: 40px 100px;
+  padding: 0px 100px;
   border-radius: 10px;
 }
 
@@ -274,9 +279,11 @@ header.disabled {
     background-repeat: no-repeat;
     background-position: center;
     padding-left: 40px;
+    padding-bottom: 50px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
+    row-gap: 30px;
 }
 
 .sale-slider-center1,
@@ -285,7 +292,7 @@ header.disabled {
 }
 .sale-slider-center1 .sale-slider-center-left .slider-Icon {
   background-color: #ffffff;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 .sale-slider-center1 .sale-slider-center-left .slider-Icon a {
   color: #008bff;
@@ -296,9 +303,11 @@ header.disabled {
     background-size: cover;
     background-repeat: no-repeat;
     padding-left: 40px;
+    padding-bottom: 50px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    row-gap: 10px;
 }
 .sale-slider-center-left-main div h1 {
   font-size: 23px;
@@ -362,7 +371,7 @@ header.disabled {
 }
 .sale-slider-dot {
   position: relative;
-  top: -70px;
+  top: -40px;
   display: flex;
   justify-content: center;
 }
@@ -385,6 +394,7 @@ header.disabled {
 /* section everything-event */
 .everything-event {
   width: 100%;
+  margin-top: 50px;
 }
 .everything-event-center{
     height: 370px;
@@ -398,6 +408,7 @@ header.disabled {
 .everything-event-detail{
     height: 90%;
     width: 80%;
+    padding-top: 50px;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -456,7 +467,7 @@ header.disabled {
     padding: 24px 20px;
   }
   .slide {
-    padding: 40px 20px;
+    padding:  20px;
   }
   .everything-event-center {
     margin: 0px 20px;
@@ -556,6 +567,9 @@ header.disabled {
   .logo img {
     max-width: 75px;
   }
+  .sale-slider {
+    margin-top: 0px;
+  }
   .sale-slider-center1,
   .sale-slider-center2,
   .sale-slider-center3 {
@@ -565,14 +579,21 @@ header.disabled {
   .sale-slider-center1 .sale-slider-center-left {
     /* width: 340px ;
         height:150px; */
-        background-image: url(../Super-App-Project-3rd-Team/Image/sale-slider-image1.png);
+        padding-top: 10px;
+        background-image: url(../Super-App-Project-3rd-Team//Image/sale-slider-image1.png);
         background-size: cover;
         background-repeat: no-repeat;
-        
         padding-left: 10px;
         display: flex;
         flex-direction: column;
+        padding-bottom: 15px;
+        row-gap: 5px;
+        font-size: 10px;
         justify-content: center;
+    }
+    .sale-slider-center1 .sale-slider-center-left .slider-Icon {
+      background-color: #ffffff;
+      margin-top: 50px;
     }
     .sale-slider-button{
         display: none;
@@ -605,6 +626,7 @@ header.disabled {
     .sale-slider-center3 .sale-slider-center-left {
         padding-left: 10px;
         justify-content: flex-start;
+        font-size: 10px;
     }
     .everything-event-center {
         height: 225px;
