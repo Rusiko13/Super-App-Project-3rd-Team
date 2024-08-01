@@ -137,6 +137,7 @@ footer {
   display: flex;
   width: 90%;
   margin: 0 auto;
+  margin-top: 24px;
   /* margin-left: 100px;
   margin-right: 100px; */
 }
