@@ -62,11 +62,11 @@ header {
   margin-left: -32px;
 }
 .center-div-top-buttons {
-  width: 24%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  column-gap: 10px;
+   width: 30%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    column-gap: 20px;
 }
 .center-div-top-buttons-icons img {
   width: 24px;
@@ -238,7 +238,7 @@ header.disabled {
 
 .sale-slider {
   width: 100%;
-  margin-top: 20px;
+  margin-top: 40px;
   font-family: "figaro300";
 }
 
@@ -700,6 +700,10 @@ header.disabled {
   border-radius: 5px;
   font-weight: bold;
   color: #717D96;
+  font-size: 18px;
+}
+.fa-star{
+  font-size: 12px;
 }
 
 .baby-sale-card .heart-icon {
@@ -720,8 +724,9 @@ header.disabled {
 
 .baby-sale-card .brand {
   font-size: 20px;
-  font-weight: 600;
+  /* font-weight: 600; */
   margin-bottom: 10px;
+  font-family: "figaro500";
 }
 
 .baby-sale-card .description {
@@ -732,7 +737,11 @@ header.disabled {
 .baby-sale-card .price {
   font-size:20px;
   color: #333;
-  font-weight: 600;
+  font-family: "figaro500";
+  
+}
+.baby-sale-card .new-price{
+  font-family: "figaro500";
 }
 
 .baby-sale-card .old-price {
@@ -765,6 +774,7 @@ header.disabled {
   background-color: #007bff;
   color: #fff;
   font-size: 12px;
+  font-family: "figaro500";
   border-radius: 5px;
   cursor: pointer;
 }
@@ -825,14 +835,16 @@ header.disabled {
   border-radius: 5px;
   font-weight: bold;
   color: #717D96;
+  font-size: 18px;
+  font-family: 'figaro500';
 }
 
 
 .baby-popular-card  .brand {
   font-size: 20px;
-  font-weight: 600;
   margin-bottom: 10px;
   color: #2D3648;
+  font-family: 'figaro500';
 }
 .baby-popular-card .description {
   color: #666;
@@ -841,8 +853,8 @@ header.disabled {
 }
 .baby-popular-card .price {
   font-size: 20px;
+  font-family: 'figaro500';
   
-  font-weight: 800;
   color: #2D3648;
 
 }
@@ -873,6 +885,7 @@ header.disabled {
   font-size: 12px;
   border-radius: 5px;
   cursor: pointer;
+  font-family: 'figaro500';
 }
 
 .baby-popular-card .button button:hover {
@@ -932,10 +945,11 @@ header.disabled {
   border-radius: 5px;
   font-weight: bold;
   color: #717D96;
+  font-size: 18px;
 }
 .baby-sea-card  .brand {
   font-size: 20px;
-  font-weight: 600;
+  font-family: 'figaro500';
   margin-bottom: 10px;
   color: #2D3648;
 }
@@ -946,8 +960,7 @@ header.disabled {
 }
 .baby-sea-card .price {
   font-size: 20px;
-  
-  font-weight: 800;
+  font-family: 'figaro500';
   color: #2D3648;
 
 }
@@ -978,6 +991,7 @@ header.disabled {
   font-size: 12px;
   border-radius: 5px;
   cursor: pointer;
+  font-family: 'figaro500';
 }
 
 .baby-sea-card .button button:hover {
