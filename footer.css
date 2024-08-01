@@ -124,8 +124,9 @@ footer {
 .popular_brends_section {
   /* max-width: 1400px; */
   width: 100%;
-  margin-left: 100px;
-  margin-right: 100px;
+  margin: 0 auto;
+  /* margin-left: 100px;
+  margin-right: 100px; */
   display: flex;
   justify-content: space-between;
   padding: 20px;
