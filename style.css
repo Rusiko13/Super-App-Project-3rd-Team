@@ -95,12 +95,17 @@ header {
 }
 .burger-menu {
   display: flex;
+<<<<<<< HEAD
   width: 15%;
+=======
+  width: 14%;
+ column-gap: 5px;
+>>>>>>> 423a4689d2c2d921b1f9698f7ce0bc195f0f46dd
   cursor: pointer;
 }
 .burger-menu span {
   color: #000000;
-  font-size: 15px;
+  font-size: 14px;
 }
 /* carousel */
 
@@ -303,6 +308,7 @@ header.disabled {
     background-size: cover;
     background-repeat: no-repeat;
     padding-left: 40px;
+    padding-bottom: 50px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
