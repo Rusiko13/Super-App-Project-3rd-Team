@@ -95,12 +95,7 @@ header {
 }
 .burger-menu {
   display: flex;
-<<<<<<< HEAD
   width: 15%;
-=======
-  width: 14%;
- column-gap: 5px;
->>>>>>> 423a4689d2c2d921b1f9698f7ce0bc195f0f46dd
   cursor: pointer;
 }
 .burger-menu span {
@@ -297,7 +292,7 @@ header.disabled {
 }
 .sale-slider-center1 .sale-slider-center-left .slider-Icon {
   background-color: #ffffff;
-  margin-top: 20px;
+  margin-top: 50px;
 }
 .sale-slider-center1 .sale-slider-center-left .slider-Icon a {
   color: #008bff;
@@ -312,6 +307,7 @@ header.disabled {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    row-gap: 10px;
 }
 .sale-slider-center-left-main div h1 {
   font-size: 23px;
@@ -375,7 +371,7 @@ header.disabled {
 }
 .sale-slider-dot {
   position: relative;
-  top: -70px;
+  top: -40px;
   display: flex;
   justify-content: center;
 }
@@ -398,6 +394,7 @@ header.disabled {
 /* section everything-event */
 .everything-event {
   width: 100%;
+  margin-top: 50px;
 }
 .everything-event-center{
     height: 370px;
@@ -411,6 +408,7 @@ header.disabled {
 .everything-event-detail{
     height: 90%;
     width: 80%;
+    padding-top: 50px;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -469,7 +467,7 @@ header.disabled {
     padding: 24px 20px;
   }
   .slide {
-    padding: 40px 20px;
+    padding:  20px;
   }
   .everything-event-center {
     margin: 0px 20px;
@@ -581,13 +579,16 @@ header.disabled {
   .sale-slider-center1 .sale-slider-center-left {
     /* width: 340px ;
         height:150px; */
-        background-image: url(../Super-App-Project-3rd-Team/Image/sale-slider-image1.png);
+        padding-top: 10px;
+        background-image: url(../Super-App-Project-3rd-Team//Image/sale-slider-image1.png);
         background-size: cover;
         background-repeat: no-repeat;
-        
         padding-left: 10px;
         display: flex;
         flex-direction: column;
+        padding-bottom: 15px;
+        row-gap: 5px;
+        font-size: 10px;
         justify-content: center;
     }
     .sale-slider-button{
@@ -621,6 +622,7 @@ header.disabled {
     .sale-slider-center3 .sale-slider-center-left {
         padding-left: 10px;
         justify-content: flex-start;
+        font-size: 10px;
     }
     .everything-event-center {
         height: 225px;
