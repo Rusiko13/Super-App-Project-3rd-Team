@@ -1,16 +1,21 @@
-@font-face {
+/* @font-face {
   font-family: figaro300;
   src: url(../fonts/firago-latin-300-normal.ttf);
 }
 @font-face {
   font-family: figaro500;
   src: url(../fonts/firago-latin-500-normal.ttf);
-}
+} */
+
+/* font-family: "FiraGO", sans-serif; */
+
+@import url("https://free.bboxtype.com/embedfonts/?family=FiraGO:100i,400,500,600,700");
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "figaro300";
+  font-family: "FiraGO", sans-serif;
 }
 body {
   margin: 0px;
@@ -22,7 +27,6 @@ body {
 .pool-section {
   flex-wrap: wrap;
   justify-content: space-between;
-  /* margin: 24px 100px; */
 }
 
 .product-card {
@@ -32,18 +36,22 @@ body {
   width: 400px;
   height: 298px;
 }
-
-.picture-pool {
+.product-card img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* .picture-pool {
   width: 368px;
   height: 214px;
-}
+} */
 
 .product-card p {
   font-weight: 500;
   padding: 10px;
   font-size: 24px;
   line-height: 31.2px;
-  font-family: "figaro500";
+  font-family: "FiraGO", sans-serif;
   color: #363939;
 }
 
@@ -64,7 +72,7 @@ body {
 .products-section {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  /* gap: 20px; */
   justify-content: space-around;
   gap: 16px;
   margin-top: 20px;
@@ -73,7 +81,7 @@ body {
 .product-info {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  /* align-items: center; */
   padding: 10px;
 }
 
@@ -151,7 +159,7 @@ footer {
   margin-top: 35px;
 }
 .help_section {
-  margin-right: 10px;
+  /* margin-right: 10px; */
   width: 314px;
   height: 264px;
 }
@@ -161,7 +169,8 @@ footer {
   font-size: 20px;
   font-weight: bold;
   line-height: 24px;
-  font-family: "figaro500";
+  font-family: "FiraGO", sans-serif;
+  margin-bottom: 24px;
 }
 
 .footer-section ul {
@@ -170,8 +179,7 @@ footer {
 }
 
 .footer-section ul li {
-  margin-bottom: 8px;
-  margin-top: 10px;
+  margin-bottom: 24px;
 }
 
 .footer-section ul li a {
@@ -180,11 +188,11 @@ footer {
   font-size: 20px;
   line-height: 24px;
   font-weight: 400;
-  font-family: "figaro500";
+  font-family: "FiraGO", sans-serif;
 }
 
 .footer-section p {
-  margin: 5px 0;
+  margin-bottom: 24px;
 }
 
 .social-media a {
@@ -192,7 +200,7 @@ footer {
 }
 
 .social-media img {
-  margin-top: 20px;
+  /* margin-top: 20px; */
   width: 24px;
   height: 24px;
 }
@@ -206,6 +214,7 @@ footer {
 }
 .app-links a {
   display: inline-block;
+  margin-bottom: 24px;
 }
 /* Responsive Design */
 @media (max-width: 1024px) {
@@ -245,13 +254,14 @@ footer {
 
 .popular_brens_title {
   text-align: left;
+  align-items: center;
   margin-bottom: 24px;
   font-weight: 500;
   line-height: 34px;
   color: #000000;
   font-size: 24px;
   font-weight: bold;
-  font-family: "figaro500";
+  font-family: "FiraGO", sans-serif;
 }
 
 .flex-container {
@@ -268,23 +278,31 @@ footer {
   flex: 1 1 calc(33.333% - 20px);
   max-width: calc(33.333% - 20px);
   position: relative;
+  align-items: center;
   transition: transform 0.3s, box-shadow 0.3s;
 }
 .hape {
   background-color: #e7d1ee;
   max-width: 753px;
   height: 583px;
+
+  /* font-weight: 500;
+  font-family: "FiraGO", sans-serif; */
 }
 .dyson {
   background-color: #ffe393;
   max-width: 600px;
   height: 285px;
   margin-bottom: 20px;
+  /* font-weight: 500;
+  font-family: "FiraGO", sans-serif; */
 }
 .greenpan {
   background-color: #d8e4c2;
   max-width: 600px;
   height: 277px;
+  /* font-weight: 500;
+  font-family: "FiraGO", sans-serif; */
 }
 .flex-item img {
   max-width: 100%;
@@ -294,11 +312,11 @@ footer {
 }
 
 .label {
-  width: 500;
-  line-height: 32px;
+  font-weight: 500;
+  line-height: 31.2px;
   font-size: 24px;
   color: #363939;
-  font-family: "figaro500";
+  font-family: "FiraGO", sans-serif;
 }
 
 .flex-item:hover {
