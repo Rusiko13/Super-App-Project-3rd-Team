@@ -4,19 +4,23 @@
   padding: 0;
 }
 
+@import url('https://free.bboxtype.com/embedfonts/?family=FiraGO:400,600,700');
+
+
 /* izas part starts */
 
-@font-face {
+/* @font-face {
   font-family: figaro300;
   src: url(../fonts/firago-latin-300-normal.ttf);
 }
 @font-face {
   font-family: figaro500;
   src: url(../fonts/firago-latin-500-normal.ttf);
-}
+} */
 body {
   margin: 0px;
   box-sizing: border-box;
+  font-family: 'FiraGO', sans-serif;
 }
 a {
   text-decoration: none;
@@ -62,16 +66,16 @@ header {
   margin-left: -32px;
 }
 .center-div-top-buttons {
-   width: 30%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    column-gap: 20px;
+  width: 30%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  column-gap: 20px;
 }
 .center-div-top-buttons-icons img {
   width: 24px;
 }
-.center-div-top-buttons-login{
+.center-div-top-buttons-login {
   width: 70%;
 }
 .center-div-top-buttons-login button {
@@ -273,17 +277,17 @@ header.disabled {
   justify-content: space-evenly;
 }
 .sale-slider-center1 .sale-slider-center-left {
-    width: 100%;
-    background-image: url("../Super-App-Project-3rd-Team/Image/sale-slider-image1.png"); 
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    padding-left: 40px;
-    padding-bottom: 50px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    row-gap: 30px;
+  width: 100%;
+  background-image: url("../Super-App-Project-3rd-Team/Image/sale-slider-image1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-left: 40px;
+  padding-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  row-gap: 30px;
 }
 
 .sale-slider-center1,
@@ -298,16 +302,16 @@ header.disabled {
   color: #008bff;
 }
 .sale-slider-center3 .sale-slider-center-left {
-    width: 100%;
-    background-image: url("../Super-App-Project-3rd-Team/Image//sale-slider-image3.png"); 
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding-left: 40px;
-    padding-bottom: 50px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    row-gap: 10px;
+  width: 100%;
+  background-image: url("../Super-App-Project-3rd-Team/Image//sale-slider-image3.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-left: 40px;
+  padding-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  row-gap: 10px;
 }
 .sale-slider-center-left-main div h1 {
   font-size: 23px;
@@ -396,25 +400,24 @@ header.disabled {
   width: 100%;
   margin-top: 50px;
 }
-.everything-event-center{
-    height: 370px;
-    border-radius: 10px;
-   margin: 0px 100px;
-   background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-image: url("../Super-App-Project-3rd-Team/Image/everything-event-image.png"); 
-} 
-.everything-event-detail{
-    height: 90%;
-    width: 80%;
-    padding-top: 50px;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    font-family: "figaro300";
-
+.everything-event-center {
+  height: 370px;
+  border-radius: 10px;
+  margin: 0px 100px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../Super-App-Project-3rd-Team/Image/everything-event-image.png");
+}
+.everything-event-detail {
+  height: 90%;
+  width: 80%;
+  padding-top: 50px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-family: "figaro300";
 }
 .everything-event-detail div h2 {
   font-size: 24px;
@@ -467,7 +470,7 @@ header.disabled {
     padding: 24px 20px;
   }
   .slide {
-    padding:  20px;
+    padding: 20px;
   }
   .everything-event-center {
     margin: 0px 20px;
@@ -579,94 +582,92 @@ header.disabled {
   .sale-slider-center1 .sale-slider-center-left {
     /* width: 340px ;
         height:150px; */
-        padding-top: 10px;
-        background-image: url(../Super-App-Project-3rd-Team//Image/sale-slider-image1.png);
-        background-size: cover;
-        background-repeat: no-repeat;
-        padding-left: 10px;
-        display: flex;
-        flex-direction: column;
-        padding-bottom: 15px;
-        row-gap: 5px;
-        font-size: 10px;
-        justify-content: center;
-    }
-    .sale-slider-center1 .sale-slider-center-left .slider-Icon {
-      background-color: #ffffff;
-      margin-top: 50px;
-    }
-    .sale-slider-button{
-        display: none;
-    }
-    .slider-Icon  img{
-        display: none;
-    }
-    .slider-Icon{
-        width: 110px;
-        height: 30px;
-    }
-    .slider-Icon  a{
-        font-weight: bold;
-        padding: 3px;
-    }
-    .dot {
-        height: 10px;
-        width: 10px;
-    }
-    .sale-slider-center-left-main div h1{
-        font-size: 12px;
-    }
-    .sale-slider-center-left-main div h4{
-        display: none;
-    }
-    .sale-slider-center-left-main div a {
-        color: #008BFF;
-        font-size: 10px;
-    }
-    .sale-slider-center3 .sale-slider-center-left {
-        padding-left: 10px;
-        justify-content: flex-start;
-        font-size: 10px;
-    }
-    .everything-event-center {
-        height: 225px;
-    }
-    .everything-event-detail div h2 {
-        font-size: 12px;
-        line-height: 16px;
-    }
-    .everything-event-detail div span {
-        font-size: 12px;
-        
-    }
-    .everything-event-Icon {
-        width: 150px;
-        height: 25px;
-        border-radius: 5px;
-    }
-    .everything-event-Icon a {
-        font-size: 10px;
-    }
+    padding-top: 10px;
+    background-image: url(../Super-App-Project-3rd-Team//Image/sale-slider-image1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 15px;
+    row-gap: 5px;
+    font-size: 10px;
+    justify-content: center;
+  }
+  .sale-slider-center1 .sale-slider-center-left .slider-Icon {
+    background-color: #ffffff;
+    margin-top: 50px;
+  }
+  .sale-slider-button {
+    display: none;
+  }
+  .slider-Icon img {
+    display: none;
+  }
+  .slider-Icon {
+    width: 110px;
+    height: 30px;
+  }
+  .slider-Icon a {
+    font-weight: bold;
+    padding: 3px;
+  }
+  .dot {
+    height: 10px;
+    width: 10px;
+  }
+  .sale-slider-center-left-main div h1 {
+    font-size: 12px;
+  }
+  .sale-slider-center-left-main div h4 {
+    display: none;
+  }
+  .sale-slider-center-left-main div a {
+    color: #008bff;
+    font-size: 10px;
+  }
+  .sale-slider-center3 .sale-slider-center-left {
+    padding-left: 10px;
+    justify-content: flex-start;
+    font-size: 10px;
+  }
+  .everything-event-center {
+    height: 225px;
+  }
+  .everything-event-detail div h2 {
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .everything-event-detail div span {
+    font-size: 12px;
+  }
+  .everything-event-Icon {
+    width: 150px;
+    height: 25px;
+    border-radius: 5px;
+  }
+  .everything-event-Icon a {
+    font-size: 10px;
+  }
 }
-
 
 /* baby-care css */
 
 /* section baby-care-popular */
-.baby-care-sale{
+.baby-care-sale {
   width: 100%;
   font-family: "figaro300";
 }
-.baby-care-sale-container{
+.baby-care-sale-container {
   width: 90%;
   margin: auto;
 }
-.baby-care-sale-container-head{
+.baby-care-sale-container-head {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.baby-care-sale-container-head a{
+.baby-care-sale-container-head a {
   font-size: 14px;
   color: #000000;
   text-decoration: underline;
@@ -687,7 +688,7 @@ header.disabled {
   position: relative;
 }
 
-.baby-sale-card  img {
+.baby-sale-card img {
   width: 100%;
   height: auto;
 }
@@ -699,10 +700,10 @@ header.disabled {
   padding: 5px 10px;
   border-radius: 5px;
   font-weight: bold;
-  color: #717D96;
+  color: #717d96;
   font-size: 18px;
 }
-.fa-star{
+.fa-star {
   font-size: 12px;
 }
 
@@ -710,13 +711,12 @@ header.disabled {
   position: absolute;
   top: 10px;
   right: 10px;
-  border: 1px solid  #EFEFEF;
+  border: 1px solid #efefef;
   border-radius: 100px;
   padding: 5px 10px;
   font-size: 20px;
   cursor: pointer;
 }
-
 
 .baby-sale-card .details {
   padding: 20px 10px;
@@ -735,12 +735,11 @@ header.disabled {
 }
 
 .baby-sale-card .price {
-  font-size:20px;
+  font-size: 20px;
   color: #333;
   font-family: "figaro500";
-  
 }
-.baby-sale-card .new-price{
+.baby-sale-card .new-price {
   font-family: "figaro500";
 }
 
@@ -749,18 +748,15 @@ header.disabled {
   margin-left: 10px;
   color: #999;
   font-size: 16px;
- 
 }
 
 .baby-sale-card .discount {
   padding: 5px;
-  background-color: #FF3333;
+  background-color: #ff3333;
   color: white;
   border-radius: 10px;
   font-size: 16px;
   margin-left: 10px;
-
-  
 }
 
 .baby-sale-card .button {
@@ -785,16 +781,15 @@ header.disabled {
 
 /* section baby-care-popular */
 
-.baby-care-popular{
+.baby-care-popular {
   width: 100%;
   font-family: "figaro300";
-  
 }
-.baby-care-popular-container{
- width: 90%;
- margin: auto;
+.baby-care-popular-container {
+  width: 90%;
+  margin: auto;
 }
-.baby-care-popular-container-head{
+.baby-care-popular-container-head {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -806,7 +801,7 @@ header.disabled {
   gap: 20px;
 }
 
-.baby-care-popular-container-head  a{
+.baby-care-popular-container-head a {
   font-size: 14px;
   color: #000000;
   text-decoration: underline;
@@ -819,7 +814,7 @@ header.disabled {
   width: 300px;
   position: relative;
 }
-.baby-popular-card  img {
+.baby-popular-card img {
   max-width: 100%;
 }
 .baby-popular-card h2 {
@@ -827,24 +822,23 @@ header.disabled {
   font-size: 16px;
   font-weight: normal;
 }
-.baby-popular-card .rating{
+.baby-popular-card .rating {
   top: 10px;
   left: 10px;
   background-color: #fff;
   padding: 5px 10px;
   border-radius: 5px;
   font-weight: bold;
-  color: #717D96;
+  color: #717d96;
   font-size: 18px;
-  font-family: 'figaro500';
+  font-family: "figaro500";
 }
 
-
-.baby-popular-card  .brand {
+.baby-popular-card .brand {
   font-size: 20px;
   margin-bottom: 10px;
-  color: #2D3648;
-  font-family: 'figaro500';
+  color: #2d3648;
+  font-family: "figaro500";
 }
 .baby-popular-card .description {
   color: #666;
@@ -853,26 +847,25 @@ header.disabled {
 }
 .baby-popular-card .price {
   font-size: 20px;
-  font-family: 'figaro500';
-  
-  color: #2D3648;
+  font-family: "figaro500";
 
+  color: #2d3648;
 }
-.baby-popular-card  .details {
+.baby-popular-card .details {
   padding: 20px 10px;
 }
-.baby-popular-card  .heart-icon {
+.baby-popular-card .heart-icon {
   position: absolute;
   top: 10px;
   right: 10px;
-  border: 1px solid  #EFEFEF;
+  border: 1px solid #efefef;
   border-radius: 100px;
   padding: 5px 10px;
   font-size: 20px;
   cursor: pointer;
 }
 
-.baby-popular-card  .button {
+.baby-popular-card .button {
   margin-top: 10px;
 }
 
@@ -885,7 +878,7 @@ header.disabled {
   font-size: 12px;
   border-radius: 5px;
   cursor: pointer;
-  font-family: 'figaro500';
+  font-family: "figaro500";
 }
 
 .baby-popular-card .button button:hover {
@@ -894,18 +887,16 @@ header.disabled {
 
 /* section baby-care-sea */
 
-
-.baby-care-sea{
+.baby-care-sea {
   width: 100%;
   font-family: "figaro300";
-  
 }
 .baby-care-sea-container {
- width: 90%;
- margin: auto;
+  width: 90%;
+  margin: auto;
 }
 
-.baby-care-sea-container-head{
+.baby-care-sea-container-head {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -918,12 +909,12 @@ header.disabled {
   gap: 20px;
 }
 
-.baby-care-sea-container-head a{
+.baby-care-sea-container-head a {
   font-size: 14px;
   color: #000000;
   text-decoration: underline;
 }
-.baby-sea-card{
+.baby-sea-card {
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -934,24 +925,24 @@ header.disabled {
 .baby-sea-card img {
   max-width: 100%;
 }
-.sea-img{
+.sea-img {
   height: 220px;
 }
-.baby-sea-card .rating{
+.baby-sea-card .rating {
   top: 10px;
   left: 10px;
   background-color: #fff;
   padding: 5px 10px;
   border-radius: 5px;
   font-weight: bold;
-  color: #717D96;
+  color: #717d96;
   font-size: 18px;
 }
-.baby-sea-card  .brand {
+.baby-sea-card .brand {
   font-size: 20px;
-  font-family: 'figaro500';
+  font-family: "figaro500";
   margin-bottom: 10px;
-  color: #2D3648;
+  color: #2d3648;
 }
 .baby-sea-card .description {
   color: #666;
@@ -960,9 +951,8 @@ header.disabled {
 }
 .baby-sea-card .price {
   font-size: 20px;
-  font-family: 'figaro500';
-  color: #2D3648;
-
+  font-family: "figaro500";
+  color: #2d3648;
 }
 .baby-sea-card .details {
   padding: 20px 10px;
@@ -971,7 +961,7 @@ header.disabled {
   position: absolute;
   top: 10px;
   right: 10px;
-  border: 1px solid  #EFEFEF;
+  border: 1px solid #efefef;
   border-radius: 100px;
   padding: 5px 10px;
   font-size: 20px;
@@ -991,159 +981,150 @@ header.disabled {
   font-size: 12px;
   border-radius: 5px;
   cursor: pointer;
-  font-family: 'figaro500';
+  font-family: "figaro500";
 }
 
 .baby-sea-card .button button:hover {
   background-color: #0056b3;
-} 
-#baby-care-hidden-button{
+}
+#baby-care-hidden-button {
   display: none;
 }
 
 /* baby-care responsive */
-@media (max-width: 900px){
-  .baby-card-container  {
-      display: flex;
-      justify-content: flex-start;
-      overflow-x: auto;
-      scroll-snap-type: x mandatory;
-      -webkit-overflow-scrolling: touch;
-      gap: 10px;
-      height: auto;
-      padding: 10px ;
-      box-sizing: border-box;
+@media (max-width: 900px) {
+  .baby-card-container {
+    display: flex;
+    justify-content: flex-start;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    gap: 10px;
+    height: auto;
+    padding: 10px;
+    box-sizing: border-box;
   }
-  
-  .baby-popular-card-container{
-      display: flex;
-      justify-content: flex-start;
-      overflow-x: auto;
-      scroll-snap-type: x mandatory;
-      -webkit-overflow-scrolling: touch;
-      gap: 10px;
-      height: auto;
-      padding: 10px ;
-      box-sizing: border-box;
 
+  .baby-popular-card-container {
+    display: flex;
+    justify-content: flex-start;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    gap: 10px;
+    height: auto;
+    padding: 10px;
+    box-sizing: border-box;
   }
-  .baby-sea-card-container  {
-      display: flex;
-      justify-content: flex-start;
-      overflow-x: auto;
-      scroll-snap-type: x mandatory;
-      -webkit-overflow-scrolling: touch;
-      gap: 10px;
-      height: auto;
-      padding: 10px ;
-      box-sizing: border-box;
+  .baby-sea-card-container {
+    display: flex;
+    justify-content: flex-start;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    gap: 10px;
+    height: auto;
+    padding: 10px;
+    box-sizing: border-box;
   }
- 
-
 }
 
-
-@media (max-width: 750px){
-  
-  .baby-sale-card , 
-  .baby-popular-card , 
+@media (max-width: 750px) {
+  .baby-sale-card,
+  .baby-popular-card,
   .baby-sea-card {
-      min-width: calc(100% - 200px);
-      scroll-snap-align: start;
-  
+    min-width: calc(100% - 200px);
+    scroll-snap-align: start;
+  }
+}
+@media (max-width: 550px) {
+  .baby-sale-card,
+  .baby-popular-card,
+  .baby-sea-card {
+    min-width: calc(100% - 150px);
+    scroll-snap-align: start;
+    max-height: 285px;
   }
 
-}
-@media (max-width: 550px){
-      .baby-sale-card , 
-      .baby-popular-card , 
-      .baby-sea-card{
-          min-width: calc(100% - 150px);
-          scroll-snap-align: start;
-          max-height: 285px;
-      }
-
- 
-  .baby-care-sale-container-head , 
-  .baby-care-popular-container-head ,
-  .baby-care-sea-container-head{
-      font-size: 8px;
+  .baby-care-sale-container-head,
+  .baby-care-popular-container-head,
+  .baby-care-sea-container-head {
+    font-size: 8px;
   }
   .baby-sale-card .details,
-  .baby-popular-card  .details ,
-  .baby-sea-card .details{
-      padding: 5px ;
+  .baby-popular-card .details,
+  .baby-sea-card .details {
+    padding: 5px;
   }
   .baby-sale-card .brand,
   .baby-popular-card .brand,
-  .baby-sea-card .brand{
-      font-size: 12px;
+  .baby-sea-card .brand {
+    font-size: 12px;
   }
   .baby-sale-card .description,
   .baby-popular-card .description,
   .baby-sea-card .description {
-      font-size: 10px;
+    font-size: 10px;
   }
   .baby-sale-card .price,
   .baby-popular-card .price,
   .baby-sea-card .price {
-      font-size: 12px;
+    font-size: 12px;
   }
   .baby-sale-card .old-price,
   .baby-popular-card .old-price,
-  .baby-sea-card .old-price{
-      font-size: 10px;
-      margin-left: 0px;
-
+  .baby-sea-card .old-price {
+    font-size: 10px;
+    margin-left: 0px;
   }
-  .baby-sale-card .discount{
-      font-size: 12px;
-      margin-left: 0px;
-      padding: 3px;
+  .baby-sale-card .discount {
+    font-size: 12px;
+    margin-left: 0px;
+    padding: 3px;
   }
   .baby-sale-card .button,
   .baby-popular-card .button,
   .baby-sea-card .button {
-      display: none
+    display: none;
   }
-  #baby-care-hidden-button{
-      display:flex ;
-      margin-top: 5px;
+  #baby-care-hidden-button {
+    display: flex;
+    margin-top: 5px;
   }
-  #baby-care-hidden-button a{
-      width: 100%;
-  padding: 5px;
-  border: none;
-  background-color: #007bff;
-  color: #fff;
-  font-size: 12px;
-  border-radius: 5px;
-  cursor: pointer;
-  text-align: center
+  #baby-care-hidden-button a {
+    width: 100%;
+    padding: 5px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
   }
-  #baby-care-hidden-button a img{
-      width: 16px;
-      margin-right: 5px;
-
+  #baby-care-hidden-button a img {
+    width: 16px;
+    margin-right: 5px;
   }
   .baby-sale-card .rating,
   .baby-popular-card .rating,
   .baby-sea-card .rating {
-      font-size: 12px;
+    font-size: 12px;
   }
-  .baby-sale-card .heart-icon
-  .baby-popular-card .heart-icon
-  .baby-sea-card .heart-icon{
-      padding: 5px 7px;
-      font-size: 15px;
-      top: 7px;
-      right: 7px;
-  
+  .baby-sale-card
+    .heart-icon
+    .baby-popular-card
+    .heart-icon
+    .baby-sea-card
+    .heart-icon {
+    padding: 5px 7px;
+    font-size: 15px;
+    top: 7px;
+    right: 7px;
   }
   .sea-img {
-      height: 140px;
+    height: 140px;
   }
-
 }
 
 /* izas part ends */
@@ -1161,30 +1142,38 @@ header.disabled {
 }
 .popular-products-slider {
   display: flex;
+  width: 1063px;
   overflow: hidden;
   position: relative;
-  padding-left: 12px;
 }
 .title {
-  margin-left: 13px;
-  margin-top: 39px;
+  max-width: 387px;
 }
-.pupular-products-sect > h2 {
-  font-weight: 500;
-  font-size: 24px;
+.popular-products-main-div h2 {
+  font-weight: 600;
+  font-size: 20px;
   line-height: 33.6px;
 }
 .popular-products-title-div {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 39px;
+
 }
 .turn-products-div {
   display: flex;
-  margin-top: 39px;
-  padding-right: 11px;
+  align-items: center;
+  justify-content: center;
+  column-gap: 10px;
 }
-.left-btn,.right-btn {
+.turn-products-div > div {
+  display: flex;
+  column-gap: 10px;
+}
+.left-btn,
+.right-btn {
   width: 32px;
   height: 32px;
   border-radius: 50%;
@@ -1196,24 +1185,22 @@ header.disabled {
   justify-content: center;
   color: #d8d8d8;
   cursor: pointer;
-  margin-left: 10px;
 }
-.left-btn:focus{
+.left-btn:focus {
   color: #80c5ff;
   border: 1px solid #80c5ff;
   transition: outline 0.3s, box-shadow 0.3s;
 }
-.right-btn:focus{
+.right-btn:focus {
   color: #80c5ff;
   border: 1px solid #80c5ff;
   transition: outline 0.3s, box-shadow 0.3s;
 }
-
 
 .popular-products-main-div {
-  width: 295px;
-  flex: 0 0 auto; 
-  height: 406px;
+  width: 250px;
+  flex: 0 0 auto;
+  height: 395px;
   display: flex;
   flex-direction: column;
   row-gap: 12px;
@@ -1225,6 +1212,7 @@ header.disabled {
   -ms-border-radius: 6px;
   -o-border-radius: 6px;
 }
+
 .popular-product-div1 {
   padding-top: 10px;
 }
@@ -1233,7 +1221,32 @@ header.disabled {
   align-items: center;
   column-gap: 20px;
 }
-
+@media (max-width: 1080px) {
+  .popular-products-slider {
+    width: 793px;
+  }
+}
+@media (max-width: 810px) {
+  .popular-products-slider {
+    width: 520px;
+  }
+  .title {
+    max-width: 250px;
+  }
+}
+@media (max-width: 538px) {
+  .popular-products-slider {
+    width: 270px;
+  }
+  .title {
+    font-size: 18px;
+    width: 244px;
+  }
+  .turn-products-div {
+    flex-direction: column;
+    row-gap: 10px;
+  }
+}
 .heart-icon-div {
   cursor: pointer;
   width: 32px;
@@ -1245,7 +1258,7 @@ header.disabled {
   justify-content: center;
 }
 
-.fa-heart{
+.fa-heart {
   color: red;
   font-size: 15px;
 }
@@ -1254,14 +1267,27 @@ header.disabled {
   color: #6d6e70;
   font-size: 15px;
 }
-.popular-products-div1 p{
-   color: #717D96;
-   display: flex;
-   align-items: center;
+
+.popular-products-div1 p {
+  color: #717d96;
+  display: flex;
+  align-items: center;
 }
-.popular-products-div1 p i{
+.popular-products-div1 p i {
   font-size: 8px;
   margin-right: 3px;
+}
+.everything-fy,
+.only-with-us,
+.popular-products-sect {
+  display: flex;
+  justify-content: center;
+}
+.centered-div {
+  max-width: 1063px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 .percentage-box {
   width: 38px;
@@ -1282,13 +1308,14 @@ header.disabled {
 }
 .discount {
   font-size: 20px;
+  font-weight: 700;
 }
 .popular-products-main-div h3 {
   font-weight: 400;
   font-size: 14px;
 }
 .add-to-basket-btn {
-  width: 263px;
+  max-width: 220px;
   height: 40px;
   background-color: #008bff;
   border: none;
@@ -1335,12 +1362,22 @@ header.disabled {
   background: url(../Super-App-Project-3rd-Team/photos/popular-product-12.png);
 }
 .popular-product-photo {
-  width: 295px;
+  width: 95%;
   height: 218px;
   display: flex;
-  justify-content: end;
-  padding: 21px 22px 0 0;
+  justify-content: space-between;
+  padding-top: 13px;
   background-size: contain;
+  background-position: center;
   background-repeat: no-repeat;
+  
 }
-
+.popular-product-photo p{
+ margin-top: auto;
+}
+.popular-product-photo7{
+background-size: 185px 197px;
+}
+.popular-product-photo11{
+  background-size: 155px 210px;
+}
