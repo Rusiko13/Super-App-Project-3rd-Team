@@ -4,23 +4,14 @@
   padding: 0;
 }
 
-@import url('https://free.bboxtype.com/embedfonts/?family=FiraGO:400,600,700');
-
+@import url("https://free.bboxtype.com/embedfonts/?family=FiraGO:400,500,600,700");
 
 /* izas part starts */
 
-/* @font-face {
-  font-family: figaro300;
-  src: url(../fonts/firago-latin-300-normal.ttf);
-}
-@font-face {
-  font-family: figaro500;
-  src: url(../fonts/firago-latin-500-normal.ttf);
-} */
 body {
   margin: 0px;
   box-sizing: border-box;
-  font-family: 'FiraGO', sans-serif;
+  font-family: "FiraGO", sans-serif;
 }
 a {
   text-decoration: none;
@@ -1153,6 +1144,7 @@ header.disabled {
   font-weight: 600;
   font-size: 20px;
   line-height: 33.6px;
+  color: #2d3648;
 }
 .popular-products-title-div {
   width: 100%;
@@ -1160,13 +1152,16 @@ header.disabled {
   justify-content: space-between;
   align-items: center;
   margin-top: 39px;
-
 }
 .turn-products-div {
   display: flex;
   align-items: center;
   justify-content: center;
   column-gap: 10px;
+}
+.turn-products-div > span {
+  text-decoration: underline;
+  text-underline-offset: 4px;
 }
 .turn-products-div > div {
   display: flex;
@@ -1185,6 +1180,10 @@ header.disabled {
   justify-content: center;
   color: #d8d8d8;
   cursor: pointer;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .left-btn:focus {
   color: #80c5ff;
@@ -1220,6 +1219,14 @@ header.disabled {
   display: flex;
   align-items: center;
   column-gap: 20px;
+}
+.star-box{
+  color: #717D96;
+  font-weight: 700;
+}
+.star-box > img {
+  width: 11.65px;
+  height: 12px;
 }
 @media (max-width: 1080px) {
   .popular-products-slider {
@@ -1296,23 +1303,26 @@ header.disabled {
   background-color: #ff3333;
   color: #ffffff;
   font-size: 14px;
-  font-weight: 700;
+  font-weight: 600;
   display: flex;
   align-items: center;
   justify-content: center;
-  /*font-family: inter;
-    */
 }
 .prise-line-through {
   text-decoration: line-through;
+  color: #616161;
+  font-weight: 400;
+  font-size: 16px;
 }
 .discount {
   font-size: 20px;
   font-weight: 700;
+  color: #2d3648;
 }
 .popular-products-main-div h3 {
   font-weight: 400;
   font-size: 14px;
+  color: #717d96;
 }
 .add-to-basket-btn {
   max-width: 220px;
@@ -1370,14 +1380,15 @@ header.disabled {
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  
+  display: flex;
+  justify-content: flex-end;
 }
-.popular-product-photo p{
- margin-top: auto;
+.popular-product-photo p {
+  margin-top: auto;
 }
-.popular-product-photo7{
-background-size: 185px 197px;
+.popular-product-photo7 {
+  background-size: 185px 197px;
 }
-.popular-product-photo11{
-  background-size: 155px 210px;
+.popular-product-photo11 {
+  background-size: 145px 210px;
 }
