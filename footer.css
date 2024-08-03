@@ -240,6 +240,7 @@ footer {
   }
   .arrow {
     display: block;
+    /* height: 40px; */
   }
 
   .footer-section {
@@ -248,23 +249,46 @@ footer {
     padding: 10px;
     text-align: left;
   }
-
+  .foter_mobel_sect {
+    /* height: 40px; */
+    text-align: left;
+    font-weight: 14px;
+    font-weight: bolder;
+    line-height: 14px;
+    font-family: "FiraGO", sans-serif;
+  }
   .toggle-menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 16px;
-    font-weight: bold;
+    font-size: 14px;
+    font-weight: 400;
     margin: 0;
     padding: 10px 0;
     cursor: pointer;
+    text-align: left;
   }
 
+  .help_section {
+    height: auto;
+  }
+  .toggle-menu {
+    text-align: left;
+    font-weight: 14px;
+    font-weight: bolder;
+    line-height: 14px;
+    font-family: "FiraGO", sans-serif;
+    /* background-color: #ffe393; */
+  }
   .menu {
     list-style-type: none;
     padding: 0;
     margin: 0;
     display: none;
+    text-align: left;
+    font-weight: 14px;
+    font-weight: 400;
+    line-height: 14px;
   }
 
   .menu li {
@@ -279,64 +303,39 @@ footer {
   .line {
     height: 1px;
     background-color: #cbd2e0;
+    /* width: 343px; */
     margin-bottom: 10px;
   }
 
   .social-media {
     display: flex;
     justify-content: space-around;
-    width: 100%;
+    width: 35%;
     margin: 10px 0;
+  }
+  .google-play {
+    margin-top: -20px;
   }
 
   .app-links {
     display: flex;
-    justify-content: space-around;
-    width: 100%;
+    justify-content: right;
+    margin-left: 200px;
+    margin-top: -60px;
+
+    width: 40%;
   }
 
   .store {
-    width: 120px;
+    width: 131px;
+    height: 38px;
+    gap: none;
   }
 }
 
 /*  */
 /*  */
 /*  */
-@media (max-width: 1024px) {
-  .footer-container {
-    flex-direction: column;
-    align-items: center;
-  }
-  .footer-section {
-    width: 100%;
-    max-width: 500px;
-    text-align: center;
-  }
-}
-
-@media (max-width: 768px) {
-  .footer-section {
-    max-width: 300px;
-  }
-}
-
-@media (max-width: 480px) {
-  .footer-section {
-    max-width: 100%;
-    text-align: center;
-    padding: 10px;
-  }
-  .social-media a,
-  .app-links a {
-    margin: 5px;
-  }
-}
-/* 
-.popular_brends {
-  margin: 24px 100px;
-  padding: 20px;
-} */
 
 .popular_brens_title {
   text-align: left;
@@ -352,7 +351,7 @@ footer {
 
 .flex-container {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: space-between;
   gap: 20px;
 }
@@ -425,8 +424,35 @@ footer {
   }
 
   .arrow {
-    bottom: 10px;
-    right: 10px;
+    height: 20px;
+    width: 20px;
+    border-radius: none;
+  }
+  .hape {
+    height: 229px;
+    width: 166;
+  }
+  .hape_mob {
+    margin-top: 50px;
+  }
+  /* .hape img {
+    width: 134px;
+    height: 168px;
+  } */
+  .dyson {
+    width: 165px;
+    height: 109px;
+  }
+  .greenpan {
+    width: 165px;
+    height: 109px;
+  }
+  .label {
+    font-weight: bold;
+    line-height: 15px;
+    font-size: 12px;
+    color: #363939;
+    font-family: "FiraGO", sans-serif;
   }
 }
 /* end salome 's section */
