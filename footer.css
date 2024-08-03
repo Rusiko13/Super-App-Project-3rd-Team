@@ -128,7 +128,6 @@ footer {
 .footer,
 .pool,
 .popularbrend {
-  /* max-width: 1400px; */
   width: 100%;
   margin: 0 auto;
   display: flex;
@@ -136,30 +135,30 @@ footer {
   padding: 20px;
   border-radius: 10px;
 }
+
 .footer-container,
 .pool-section {
-  /* margin: 90%; */
-  display: flex;
   width: 90%;
   margin: 0 auto;
   margin-top: 35px;
-  /* margin-left: 100px;
-  margin-right: 100px; */
 }
+
 .footer-container {
   display: flex;
   justify-content: space-between;
 }
+
 .popular_brends {
   width: 90%;
   margin: 0 auto;
   margin-top: 35px;
 }
+
 .help_section {
-  /* margin-right: 10px; */
   width: 314px;
   height: 264px;
 }
+
 .footer-section h4 {
   margin-bottom: 10px;
   color: #000000;
@@ -197,23 +196,113 @@ footer {
 }
 
 .social-media img {
-  /* margin-top: 20px; */
   width: 24px;
   height: 24px;
 }
+
 .app-links {
   display: flex;
   flex-direction: column;
 }
+
 .store {
   max-width: 180px;
   height: 52px;
 }
+
 .app-links a {
   display: inline-block;
   margin-bottom: 24px;
 }
+
+.arrow {
+  display: none;
+}
+
 /* Responsive Design */
+@media (max-width: 1024px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-section {
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .arrow {
+    display: block;
+  }
+
+  .footer-section {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    text-align: left;
+  }
+
+  .toggle-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0;
+    padding: 10px 0;
+    cursor: pointer;
+  }
+
+  .menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+  }
+
+  .menu li {
+    margin: 10px 0;
+  }
+
+  .menu li a {
+    text-decoration: none;
+    color: #333;
+  }
+
+  .line {
+    height: 1px;
+    background-color: #cbd2e0;
+    margin-bottom: 10px;
+  }
+
+  .social-media {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .app-links {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  .store {
+    width: 120px;
+  }
+}
+
+/*  */
+/*  */
+/*  */
 @media (max-width: 1024px) {
   .footer-container {
     flex-direction: column;
