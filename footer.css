@@ -114,19 +114,6 @@ body {
   .product-card {
     width: calc(33.333% - 20px);
   }
-  .pool::-webkit-scrollbar {
-    width: 6px;
-    height: 6px;
-  }
-
-  .pool::-webkit-scrollbar-thumb {
-    background-color: #ccc;
-    border-radius: 3px;
-  }
-
-  .pool::-webkit-scrollbar-track {
-    background: #f1f1f1;
-  }
 }
 /* Scrollbar styling for webkit browsers */
 
@@ -157,6 +144,19 @@ body {
     line-height: 16px;
     font-family: "FiraGO", sans-serif;
     color: #363939;
+  }
+  .pool::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+
+  .pool::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 3px;
+  }
+
+  .pool::-webkit-scrollbar-track {
+    background: #f1f1f1;
   }
 }
 /*  */
