@@ -26,7 +26,7 @@ body {
 /*  */
 .pool-section {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: space-between;
 }
 
@@ -72,7 +72,7 @@ body {
 }
 .products-section {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   gap: 20px;
   justify-content: space-around;
   gap: 16px;
@@ -113,6 +113,34 @@ body {
 @media (min-width: 768px) {
   .product-card {
     width: calc(33.333% - 20px);
+  }
+}
+/* Scrollbar styling for webkit browsers */
+.pool::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+.pool::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 3px;
+}
+
+.pool::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 350px) {
+  .pool {
+    padding: 10px;
+  }
+  .pool {
+    scroll-snap-type: x mandatory;
+  }
+
+  .product-card {
+    scroll-snap-align: center;
   }
 }
 /*  */
@@ -455,5 +483,6 @@ footer {
     font-family: "FiraGO", sans-serif;
   }
 }
+
 /* end salome 's section */
 /* end popular brends section */
