@@ -1,14 +1,14 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const scrollContainer = document.querySelector(".pool");
+  const poolSection = document.querySelector(".pool-section");
   const cards = document.querySelectorAll(".product-card");
-  const centerCard = document.querySelector(".auzi");
+  let currentIndex = 1; // Start with the center card
 
-  // Center the 'auzi' card initially
-  const centerCardPosition =
-    centerCard.offsetLeft -
-    scrollContainer.offsetWidth / 2 +
-    centerCard.offsetWidth / 2;
-  scrollContainer.scrollLeft = centerCardPosition;
+  const updateCarousel = () => {
+    poolSection.className = "pool-section center-" + currentIndex;
+  };
+
+  // Initialize carousel position
+  updateCarousel();
 
   // Variables to track touch scrolling
   let isDown = false;
@@ -16,21 +16,30 @@ document.addEventListener("DOMContentLoaded", function () {
   let scrollLeft;
 
   // Event listeners for touch scrolling
-  scrollContainer.addEventListener("touchstart", (e) => {
+  poolSection.addEventListener("touchstart", (e) => {
     isDown = true;
-    startX = e.touches[0].pageX - scrollContainer.offsetLeft;
-    scrollLeft = scrollContainer.scrollLeft;
+    startX = e.touches[0].pageX;
+    scrollLeft = poolSection.scrollLeft;
   });
 
-  scrollContainer.addEventListener("touchend", () => {
+  poolSection.addEventListener("touchend", (e) => {
     isDown = false;
+    const endX = e.changedTouches[0].pageX;
+    const diff = startX - endX;
+
+    if (diff > 50) {
+      // Swipe left
+      currentIndex = (currentIndex + 1) % cards.length;
+    } else if (diff < -50) {
+      // Swipe right
+      currentIndex = (currentIndex - 1 + cards.length) % cards.length;
+    }
+
+    updateCarousel();
   });
 
-  scrollContainer.addEventListener("touchmove", (e) => {
+  poolSection.addEventListener("touchmove", (e) => {
     if (!isDown) return;
     e.preventDefault();
-    const x = e.touches[0].pageX - scrollContainer.offsetLeft;
-    const walk = (x - startX) * 2; // Increase the factor to scroll faster
-    scrollContainer.scrollLeft = scrollLeft - walk;
   });
 });
