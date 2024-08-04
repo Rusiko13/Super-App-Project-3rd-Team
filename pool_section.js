@@ -1,11 +1,14 @@
 document.addEventListener("DOMContentLoaded", function () {
   const scrollContainer = document.querySelector(".pool");
-  const itemWidth = document.querySelector(".product-card").offsetWidth;
-  const containerWidth = scrollContainer.offsetWidth;
-  const centerPosition = (itemWidth - containerWidth) / 2;
+  const cards = document.querySelectorAll(".product-card");
+  const centerCard = document.querySelector(".auzi");
 
-  // Scroll to the second item initially
-  scrollContainer.scrollLeft = itemWidth + centerPosition;
+  // Center the 'auzi' card initially
+  const centerCardPosition =
+    centerCard.offsetLeft -
+    scrollContainer.offsetWidth / 2 +
+    centerCard.offsetWidth / 2;
+  scrollContainer.scrollLeft = centerCardPosition;
 
   // Variables to track touch scrolling
   let isDown = false;
