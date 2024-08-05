@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
-  loadContent("pool.html", "pool_section");
-  loadContent1("footer.html", "footer");
+  // loadContent("pool.html", "pool_section");
+  // loadContent1("footer.html", "footer");
   loadContent2("popularbrends.html", "popularbrend");
 });
 
