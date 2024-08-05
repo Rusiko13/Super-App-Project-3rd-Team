@@ -1,0 +1,116 @@
+
+/* rusos part */
+.whole-content{
+    padding-left: 100px;
+    margin-bottom: 40px;
+}
+.all-categ-1st-div{
+    margin: 40px 0 32px 0;
+    display: flex;
+    column-gap: 8px;
+    align-items: center;
+  }
+
+  .kid-and-cards{
+    column-gap: 133px;
+    display: flex;
+  }
+  .all-category a {
+   color:  #000000;
+  
+  }
+  .kid-categories{
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+  }
+  .kid-categories ul{
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+  }
+  .kid-cards{
+    width: 60vw;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .kid-card {
+    width: 31%;
+    height: 122px;
+    background-color:  #F4F4F4;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding: 0 16px 0 26px;
+    justify-content: space-between;
+   
+  }
+  .kid-card img{
+    width: 35%;
+    height: 84px;
+  }
+  #second-img{
+    width: 86px;
+    height: 98px;
+  }
+  #third-img{
+    width: 88px;
+    height: 84px;
+  }
+  #fifth-img{
+    width: 57px;
+    height: 98px;
+  }
+  #sixth-img{
+    width: 57px;
+    height: 60px;
+  }
+  @media (max-width: 1000px) {
+    .kid-categories{
+        display: none;
+    }
+    .kid-cards{
+        width: 36vw;
+    }
+    .kid-card:nth-child(n+7) {
+        flex: 1 0 100%; 
+    }
+    .kid-card {
+        width: 166px;
+        height: 92px;
+    }
+    .kid-card p{
+        font-size: 12px;
+    }
+    .whole-content{
+        padding-inline: 16px;
+        margin-bottom: 40px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        
+    }
+    .kid-card img{
+        width: 58px;
+        height: 73px;
+      }
+      #second-img{
+        width: 64px;
+        height: 73px;
+      }
+      #third-img{
+        width: 62px;
+        height: 71px;
+      }
+      #fifth-img{
+        width: 67px;
+        height: 79px;
+      }
+      #sixth-img{
+        width: 57px;
+        height: 60px;
+      }
+  }
+  /* rusos part ends here  */
