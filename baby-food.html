@@ -6,14 +6,136 @@
     <title>Product Page</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="css/baby-food.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">\
+    <link rel="stylesheet" href="baby-care.css">
 
     
             
         
 </head>
+<header>
+    <div class="center-div">
+        <div class="center-div-top">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="Image/ShopEasy.png" alt="">
+                  </a> 
+            </div>
+            <div class="search">
+                <input type="text" placeholder="ძიება">
+                <img src="Image/Icon Right.png" alt="">
+            </div>
+            <div class="center-div-top-buttons">
+                <div class="center-div-top-buttons-icons">
+                    <img src="Image/cart-shopping.png" alt="">
+                </div>
+                <div class="center-div-top-buttons-icons">
+                    <img src="Image/Frame 1.png" alt="">
+                </div>
+                <div class="center-div-top-buttons-login">
+                    <button>შესვლა</button>
+                </div>
+                
+            </div>
+            <div class="hidden-button">
+                <a href="javascript:void(0)">
+                    <img src="Image/icon-align-justify.png" alt="Menu">
+                </a>
+            </div>
+            <div class="menu-container" id="menuContainer">
+                <div class="menu-header">
+                    <button id="closeButton">&times;</button>
+                </div>
+                <ul id="menuList"></ul>
+            </div>
+       </div>
+       <div class="center-div-lower">
+        <div class="center-div-lower-main">
+            <div class="burger-menu" id="burger-menu">
+                <div>
+                    <img src="Image/icon-align-justify.png" alt="">
+                </div>
+                <span>ყველა კატეგორია</span>
+            </div>
+            <div class="carousel-wrap">
+                <div class="carousel" id="carousel">
+                    <div class="carousel-slide" >
+                        <div class="carousel-item"><a href="">ფასდაკლება</a></div>
+                        <div class="carousel-item"><a href="">ტექნიკა</a></div>
+                        <div class="carousel-item"><a href="">ბავშვის მოვლა</a></div>
+                        <div class="carousel-item"><a href="">სახლი & მოვლა</a></div>
+                        <div class="carousel-item"><a href="">თავის მოვლა</a></div>
+                        <div class="carousel-item"><a href="">სათამაშოები</a></div>
+                        <div class="carousel-item"><a href="">ფიტნესი</a></div>
+                    </div>
+                    <div class="carousel-slide" >
+                        <div class="carousel-item"><a href="">ბარი & სხვა</a></div>
+                        <div class="carousel-item" id="xx"><a href="">წვეულება</a></div>
+                        <div class="carousel-item"><a href="">წიგნები</a></div>
+                        <div class="carousel-item"><a href="">ცხოველების მოვლა</a></div>
+                        <div class="carousel-item"><a href="">დასვენება & მოგზაურობა</a></div>
+                        <div class="carousel-item"><a href="">ჯანმრთელობა</a></div>
+                        <div class="carousel-item" id="xx"><a href="">ეზო & მცენარეების მოვლა</a></div>
+                    </div>
+                </div>
+                <button class="carousel-nav prev" onclick="prevSlide()">&#10094;</button>
+                <button class="carousel-nav next" onclick="nextSlide()">&#10095;</button>
+            </div>
+            
+        </div>
+    </div> 
+</header>
 <body>
-    
+     <!-- რუსოს ნაწილი დასაწყისი  -->
+     <div class="whole-content">
+        <div class="all-category">
+     <div class="all-categ-1st-div">
+     <span >ყველა კატეგორია</span><span>></span><span >ბავშვის მოვლა</span><span>></span> <span >ბავშვის კვება</span></div>
+    <div class="kid-and-cards">
+     <div class="kid-categories">
+        <h2>ბავშვის მოვლა</h2>
+        <ul>
+            <li><a href="#" class="ruso"> ადაპტირებული რძე </a></li>
+            <li><a href="#"> ფაფა </a></li>
+            <li><a href="#">  ორცხობილა</a></li>
+            <li><a href="#"> იოგურტი და პუდინგი </a></li>
+            <li><a href="#"> ჩაი</a></li>
+            <li><a href="#" class="see-all"> ყველას ნახვა </a></li>
+        </ul>
+     </div>
+     <div class="kid-cards">
+
+        <div class="kid-card">
+        <p>ადაპტირებული რძე</p>
+        <img src="photos/რძე.png" alt="">
+    </div>
+    <div class="kid-card">
+        <p> ფაფა</p>
+        <img id="second-img" src="photos/ფაფა.png" alt="">
+
+    </div>
+    <div class="kid-card">
+        <p>ორცხობილა</p>
+        <img src="photos/ორცხობილა.png" alt="">
+
+    </div>
+
+
+        <div class="kid-card">
+        <p>იოგურტი და პუდინგი  </p>
+        <img id="fourth-img" src="photos/იოგურტი.png" alt="">
+
+    </div>
+    <div class="kid-card">
+        <p>ჩაი</p>
+        <img id="fifth-img" src="photos/ჩაი.png" alt="">
+
+    </div>
+</div>
+</div>
+    </div>
+    </div>
+    <!-- რუსოს ნაწილი დასასრული -->
 
 <div class="baby-food-container ">
     <div class="filter-section">

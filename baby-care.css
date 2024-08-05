@@ -114,3 +114,10 @@
       }
   }
   /* rusos part ends here  */
+/* გადასატანი მაქვს ეს baby food css */
+  .see-all {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    color:  #000000;
+    font-weight: 600;
+  }
