@@ -54,117 +54,240 @@ const products = [
     }
 ];
 
-
 document.addEventListener('DOMContentLoaded', () => {
     const babyfoodproduct = document.getElementById('baby-product-conteiner');
     const filters = document.querySelectorAll('.filter');
     const priceInputs = document.querySelectorAll('.price-input');
+    const searchButton = document.getElementById('searchButton');
+    const sortDiv = document.getElementById('sort-div');
+    const selectedFiltersDiv = document.getElementById('selected-filters');
+    const clearAllButton = document.getElementById('clearAll');
 
-    products.forEach(product => {
-        const productCard = document.createElement('div');
-        productCard.className = 'product-card';
-        productCard.dataset.brand = product.brand;
-        productCard.dataset.price = product.price;
-        productCard.dataset.age = product.age;
-        productCard.dataset.bulk = product.bulk;
-        productCard.dataset.rating = product.rating;
+    displayProducts(products);
 
-        productCard.innerHTML = `
-            <img src="${product.image}" alt="${product.description}">
-            <div class="rating"><i class="fas fa-star"></i> ${product.rating}.0</div>
-            
-            <div class="heart-icon">
-                <img src="../Image/baby-care-image/Shape.png" alt="">
-            </div>
-            <div class="details">
-                <div class="brand">${product.brand}</div>
-                <div class="description">${product.description}</div>
-                <div class="price">
-                    <span class="new-price">${product.price}.00₾</span>
-                    
-                </div>
-                <div class="button">
-                    <button>კალათაში დამატება</button>
-                </div>
-                <div id="baby-care-hidden-button">
-                    <a href="#"><img src="../Image/baby-care-image/Icon Left.png" alt="">დამატება</a>
-                </div>
-            </div>
-        `;
-
-        babyfoodproduct.appendChild(productCard);
-    });
+    searchButton.addEventListener('click', filterProducts);
 
     filters.forEach(filter => {
-        filter.addEventListener('change', filterProducts);
+        filter.addEventListener('change', handleFilterChange);
     });
 
-    priceInputs.forEach(input => {
-        input.addEventListener('input', filterProducts);
-    });
-});
+    clearAllButton.addEventListener('click', clearAllFilters);
 
-function filterProducts() {
-    const minPrice = document.getElementById('minPrice').value;
-    const maxPrice = document.getElementById('maxPrice').value;
-    const filters = document.querySelectorAll('.filter');
-    const activeFilters = {
-        brands: [],
-        ages: [],
-        bulks: [],
-        ratings: [],
-        minPrice: minPrice ? parseFloat(minPrice) : null,
-        maxPrice: maxPrice ? parseFloat(maxPrice) : null,
+    function displayProducts(products) {
+        babyfoodproduct.innerHTML = ''; 
+        products.forEach(product => {
+            const productCard = document.createElement('div');
+            productCard.className = 'product-card';
+            productCard.dataset.brand = product.brand;
+            productCard.dataset.price = product.price;
+            productCard.dataset.age = product.age;
+            productCard.dataset.bulk = product.bulk;
+            productCard.dataset.rating = product.rating;
+
+            productCard.innerHTML = `
+                <img src="${product.image}" alt="${product.description}">
+                <div class="rating"><i class="fas fa-star"></i> ${product.rating}.0</div>
+                <div class="heart-icon">
+                    <img src="../Image/baby-care-image/Shape.png" alt="">
+                </div>
+                <div class="details">
+                    <div class="brand">${product.brand}</div>
+                    <div class="description">${product.description}</div>
+                    <div class="price">
+                        <span class="new-price">${product.price}.00₾</span>
+                    </div>
+                    <div class="button">
+                        <button>კალათაში დამატება</button>
+                    </div>
+                    <div id="baby-care-hidden-button">
+                        <a href="#"><img src="../Image/baby-care-image/Icon Left.png" alt="">დამატება</a>
+                    </div>
+                </div>
+            `;
+
+            babyfoodproduct.appendChild(productCard);
+        });
+    }
+
+    function handleFilterChange(event) {
+        const filter = event.target;
+        const filterType = filter.closest('.filter-group').querySelector('h2').textContent;
+
+        if (filter.type === 'checkbox' && filter.checked) {
+            addFilterToSortDiv(filterType);
+        } else if (filter.type === 'number') {
+            addFilterToSortDiv(filterType);
+        } else {
+            removeFilterFromSortDiv(filterType);
+        }
+        filterProducts();  
+    }
+
+    function addFilterToSortDiv(type) {
+        if (!selectedFiltersDiv.querySelector(`[data-type="${type}"]`)) {
+            const filterTag = document.createElement('div');
+            filterTag.className = 'selected-filter';
+            filterTag.dataset.type = type;
+            filterTag.innerHTML = `
+                ${type}
+                <span class="clear-icon" onclick="removeFilterFromSortDiv('${type}')">x</span>
+            `;
+            selectedFiltersDiv.appendChild(filterTag);
+        }
+    }
+
+    window.removeFilterFromSortDiv = function(type) {
+        const filterTags = selectedFiltersDiv.querySelectorAll('.selected-filter');
+        filterTags.forEach(tag => {
+            if (tag.dataset.type === type) {
+                tag.remove();
+                filters.forEach(filter => {
+                    if (filter.closest('.filter-group').querySelector('h2').textContent === type) {
+                        if (filter.type === 'checkbox') {
+                            filter.checked = false;
+                        } else if (filter.type === 'number') {
+                            filter.value = '';
+                        }
+                    }
+                });
+            }
+        });
+        filterProducts();  
     };
 
-    filters.forEach(filter => {
-        if (filter.type === 'checkbox' && filter.checked) {
-            if (filter.classList.contains('brand')) {
-                activeFilters.brands.push(filter.dataset.filter);
-            } else if (filter.classList.contains('age')) {
-                activeFilters.ages.push(filter.dataset.filter);
-            } else if (filter.classList.contains('bulk')) {
-                activeFilters.bulks.push(filter.dataset.filter);
-            } else if (filter.classList.contains('rating')) {
-                activeFilters.ratings.push(parseInt(filter.dataset.filter));
+    function clearAllFilters() {
+        selectedFiltersDiv.innerHTML = '';
+        filters.forEach(filter => {
+            if (filter.type === 'checkbox') {
+                filter.checked = false;
+            } else if (filter.type === 'number') {
+                filter.value = '';
             }
-        }
+        });
+        filterProducts();  
+    }
+
+    
+    function filterProducts() {
+        const minPrice = document.getElementById('minPrice').value;
+        const maxPrice = document.getElementById('maxPrice').value;
+        const filters = document.querySelectorAll('.filter');
+        const activeFilters = {
+            brands: [],
+            ages: [],
+            bulks: [],
+            ratings: [],
+            minPrice: minPrice ? parseFloat(minPrice) : null,
+            maxPrice: maxPrice ? parseFloat(maxPrice) : null,
+        };
+
+        filters.forEach(filter => {
+            if (filter.type === 'checkbox' && filter.checked) {
+                if (filter.classList.contains('brand')) {
+                    activeFilters.brands.push(filter.dataset.filter);
+                } else if (filter.classList.contains('age')) {
+                    activeFilters.ages.push(filter.dataset.filter);
+                } else if (filter.classList.contains('bulk')) {
+                    activeFilters.bulks.push(filter.dataset.filter);
+                } else if (filter.classList.contains('rating')) {
+                    activeFilters.ratings.push(parseInt(filter.dataset.filter));
+                }
+            }
+        });
+
+        const filteredProducts = products.filter(product => {
+            const productBrand = product.brand;
+            const productPrice = parseFloat(product.price);
+            const productAge = product.age;
+            const productBulk = product.bulk;
+            const productRating = parseInt(product.rating);
+
+            let show = true;
+
+            if (activeFilters.minPrice !== null && productPrice < activeFilters.minPrice) {
+                show = false;
+            }
+
+            if (activeFilters.maxPrice !== null && productPrice > activeFilters.maxPrice) {
+                show = false;
+            }
+
+            if (activeFilters.brands.length > 0 && !activeFilters.brands.includes(productBrand)) {
+                show = false;
+            }
+
+            if (activeFilters.ages.length > 0 && !activeFilters.ages.includes(productAge)) {
+                show = false;
+            }
+
+            if (activeFilters.bulks.length > 0 && !activeFilters.bulks.includes(productBulk)) {
+                show = false;
+            }
+
+            if (activeFilters.ratings.length > 0 && !activeFilters.ratings.includes(productRating)) {
+                show = false;
+            }
+
+            return show;
+        });
+
+        displayProducts(filteredProducts);
+    }
+});
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    const filterIcon = document.getElementById('filter-icon');
+    const filterSection = document.querySelector('.filter-section');
+    const filters = document.querySelectorAll('.filter-group h2');
+
+    const dropdownMenu = document.createElement('div');
+    dropdownMenu.classList.add('dropdown-menu');
+    filterSection.parentElement.insertBefore(dropdownMenu, filterSection);
+
+    while (filterSection.firstChild) {
+        dropdownMenu.appendChild(filterSection.firstChild);
+    }
+
+    filterIcon.addEventListener('click', () => {
+        dropdownMenu.classList.toggle('show');
     });
 
-    const products = document.querySelectorAll('.product-card');
-    products.forEach(product => {
-        const productBrand = product.dataset.brand;
-        const productPrice = parseFloat(product.dataset.price);
-        const productAge = product.dataset.age;
-        const productBulk = product.dataset.bulk;
-        const productRating = parseInt(product.dataset.rating);
-
-        let show = true;
-
-        if (activeFilters.minPrice !== null && productPrice < activeFilters.minPrice) {
-            show = false;
-        }
-
-        if (activeFilters.maxPrice !== null && productPrice > activeFilters.maxPrice) {
-            show = false;
-        }
-
-        if (activeFilters.brands.length > 0 && !activeFilters.brands.includes(productBrand)) {
-            show = false;
-        }
-
-        if (activeFilters.ages.length > 0 && !activeFilters.ages.includes(productAge)) {
-            show = false;
-        }
-
-        if (activeFilters.bulks.length > 0 && !activeFilters.bulks.includes(productBulk)) {
-            show = false;
-        }
-
-        if (activeFilters.ratings.length > 0 && !activeFilters.ratings.includes(productRating)) {
-            show = false;
-        }
-
-        product.style.display = show ? 'block' : 'none';
+    filters.forEach(filter => {
+        filter.addEventListener('click', () => {
+            const group = filter.parentElement;
+            group.classList.toggle('open');
+        });
     });
-}
+
+    function handleFilterChange(event) {
+        filterProducts();
+    }
+
+    const filterElements = document.querySelectorAll('.filter');
+    filterElements.forEach(filter => {
+        filter.addEventListener('change', handleFilterChange);
+    });
+
+    function filterProducts() {
+    }
+
+    const clearAllButton = document.getElementById('clearAll');
+    clearAllButton.addEventListener('click', () => {
+        const filterElements = document.querySelectorAll('.filter');
+        filterElements.forEach(filter => {
+            if (filter.type === 'checkbox') {
+                filter.checked = false;
+            } else if (filter.type === 'number') {
+                filter.value = '';
+            }
+        });
+        filterProducts();
+    });
+
+    displayProducts(products);
+
+    function displayProducts(products) {
+    }
+});
+

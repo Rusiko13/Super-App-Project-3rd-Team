@@ -136,17 +136,26 @@
     </div>
     </div>
     <!-- რუსოს ნაწილი დასასრული -->
-
+    <!-- იზას ნაწილის დასაწყისი -->
+ <section class="baby-food-filter">
 <div class="baby-food-container ">
+    <div id="filter-icon" class="filter-icon">
+        <i class="fas fa-filter"></i> 
+    </div>
+    
     <div class="filter-section">
         <div class="filter-group">
             <h2>ფასი</h2>
+        <div class="price-filter-flex">
             <label>
-                 <input type="number" id="minPrice" class="filter price-input" placeholder="მინ">
+                 <input type="number" id="minPrice" class="filter price-input" placeholder="მინ.">
             </label>
             <label>
-                <input type="number" id="maxPrice" class="filter price-input" placeholder="მაქს">
+                <input type="number" id="maxPrice" class="filter price-input" placeholder="მაქს.">
             </label>
+            <button id="searchButton" class="filter-button">ძიება</button>
+        </div>
+        
         </div>
         <div class="filter-group">
             <h2>ბრენდი</h2>
@@ -249,14 +258,28 @@
             </label>
         </div>
     </div>
+
+    <section class="baby-food-center">
     
+        <div class="sort-div" id="sort-div">
+            <div class="sort-header">
+                <span>სორტირება</span>
+                <button id="clearAll" class="clear-all"><i class="fa fa-trash" aria-hidden="true"></i></button>
+            </div>
+            <div id="selected-filters">
+               
+            </div>
+        </div>
+        
     <div class="baby-food-product-section">
         <div class="baby-food-product-conteiner" id="baby-product-conteiner">
             
         </div>
     </div>
+</section>
 </div>
-
+</section>
+<!-- იზას ნაწილის დასასრული -->
 <script src="js/baby-food.js"></script>
 
 </body>
