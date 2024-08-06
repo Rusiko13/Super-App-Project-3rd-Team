@@ -1,8 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
   const poolSection = document.querySelector(".pool-section");
   const cards = document.querySelectorAll(".product-card");
-  let currentIndex = 1; // Start with the center card
-
+  let currentIndex = 1; 
   const updateCarousel = () => {
     poolSection.className = "pool-section center-" + currentIndex;
   };
@@ -10,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const handleResize = () => {
     const screenWidth = window.innerWidth;
 
-    // Remove event listeners if outside the specified width range
+   
     if (screenWidth < 350 || screenWidth > 750) {
       poolSection.removeEventListener("touchstart", onTouchStart);
       poolSection.removeEventListener("touchend", onTouchEnd);
@@ -18,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
       return;
     }
 
-    // Add event listeners if within the specified width range
+  
     poolSection.addEventListener("touchstart", onTouchStart);
     poolSection.addEventListener("touchend", onTouchEnd);
     poolSection.addEventListener("touchmove", onTouchMove);
@@ -36,10 +35,10 @@ document.addEventListener("DOMContentLoaded", function () {
     const diff = startX - endX;
 
     if (diff > 50) {
-      // Swipe left
+      
       currentIndex = (currentIndex + 1) % cards.length;
     } else if (diff < -50) {
-      // Swipe right
+      
       currentIndex = (currentIndex - 1 + cards.length) % cards.length;
     }
 
@@ -51,12 +50,12 @@ document.addEventListener("DOMContentLoaded", function () {
     e.preventDefault();
   };
 
-  // Initialize carousel position
+ 
   updateCarousel();
 
-  // Check screen size on load and add event listeners if within range
+ 
   handleResize();
 
-  // Re-check screen size on window resize
+ 
   window.addEventListener("resize", handleResize);
 });
