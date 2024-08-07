@@ -340,7 +340,7 @@ footer {
     flex-direction: column;
     align-items: center;
   }
-  .arrow {
+  .arrowf {
     display: block;
     /* height: 40px; */
   }
