@@ -564,7 +564,6 @@ footer {
   max-width: 70%;
   margin-bottom: 40px;
   margin-left:  20%;
-  
 }
 .flex_item_page2{
   /* width: 925px; */
@@ -637,4 +636,81 @@ background-color: #FFE393;
     height:109px;
   }
  
+}
+
+/* bike section */
+
+.bike_section{
+  max-width: 80%;
+  margin-left:  30%;
+  margin-bottom: 40px;
+  margin-top: 40px;
+  
+}
+.bike_div {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 925px;
+  height: 341px;
+  
+  border-radius: 10px;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #E6F3FF;
+}
+
+.bike_content{
+  max-width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.bike_title h2{
+  font-size: 24px;
+  color: #002A4C;
+  font-weight: 500;
+  font-family: "FiraGO", sans-serif; 
+  margin-top: 20px;
+}
+
+.bike_button{
+  background-color: #E6F3FF;
+  color: #008BFF;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  /* border: 1px solid #008BFF; */
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+.bike_button button{
+  border: 1px solid #008BFF;
+}
+.bike_img {
+  max-width: 40%;
+  height: auto;
+  border-radius: 10px;
+}
+
+@media (max-width: 1000px) {
+  .bike_div {
+      width: 90%;
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .bike_content {
+      max-width: 100%;
+      margin-bottom: 20px;
+  }
+
+  .bike_img {
+      max-width: 80%;
+  }
 }
