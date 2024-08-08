@@ -576,7 +576,7 @@ footer {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 20px;
+  gap: 40px;
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
@@ -641,18 +641,18 @@ background-color: #FFE393;
 /* bike section */
 
 .bike_section{
-  max-width: 80%;
-  margin-left:  30%;
+  max-width: 70%;
+  margin-left: 35%;
   margin-bottom: 40px;
   margin-top: 40px;
   
 }
 .bike_div {
-  width: 100%;
+  /* width: 100%; */
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 925px;
+  width: 925px; 
   height: 341px;
   
   border-radius: 10px;
@@ -662,10 +662,12 @@ background-color: #FFE393;
 }
 
 .bike_content{
-  max-width: 50%;
+  /* max-width: 50%; */
+  
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  gap: 90px;
 }
 
 .bike_title h2{
@@ -673,7 +675,7 @@ background-color: #FFE393;
   color: #002A4C;
   font-weight: 500;
   font-family: "FiraGO", sans-serif; 
-  margin-top: 20px;
+  margin-top: -20px;
 }
 
 .bike_button{
@@ -687,10 +689,11 @@ background-color: #FFE393;
   display: flex;
   /* border: 1px solid #008BFF; */
   flex-direction: row;
-  margin-bottom: 20px;
+  margin-bottom: -20px;
 }
 .bike_button button{
   border: 1px solid #008BFF;
+  gap: 20px;
 }
 .bike_img {
   max-width: 40%;
@@ -712,5 +715,68 @@ background-color: #FFE393;
 
   .bike_img {
       max-width: 80%;
+  }
+}
+@media (max-width: 750px) {
+.bike_section{
+  max-width: 100%;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+  .bike_div {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      /* text-align: center; */
+  }
+
+  .bike_content {
+      /* max-width: 90%; */
+      margin-bottom: 20px;
+      
+  }
+
+  .bike_img {
+      width: 186px;
+      height: 178px;
+      margin-left: -140px;
+  }
+  .bike_title{
+    margin-top: -130px;
+    padding-top: 0px;
+    margin-left: 0px;
+  }
+  .bike_title h2{
+    width: 231px;
+    height: 54px;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16.8px;
+    font-family: "FiraGO", sans-serif; 
+    text-align: left;
+   
+  }
+  .bike_button{
+    width: 200px;
+    height: 32px;
+    margin-bottom: -150px;
+    /* padding-bottom: 0px; */
+    margin-left: -15px;
+    gap: 0px;
+  }
+  .bike_button img{
+    width: 16px;
+    height: 16px;
+  }
+  .bike_button p{
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 14px;
+    font-family: "FiraGO", sans-serif;
+    text-align:left;
+    text-wrap: nowrap;
   }
 }
