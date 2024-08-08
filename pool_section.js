@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
   const poolSection = document.querySelector(".pool-section");
-  const cards = document.querySelectorAll(".product-card");
+  const cards = document.querySelectorAll(".product-card-pool");
   let currentIndex = 1; 
   const updateCarousel = () => {
     poolSection.className = "pool-section center-" + currentIndex;
