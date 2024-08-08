@@ -726,6 +726,7 @@ background-color: #FFE393;
 
   .bike_div {
       width: 100%;
+      height: 225px;
       display: flex;
       flex-direction: row;
       justify-content: space-between;
@@ -745,7 +746,7 @@ background-color: #FFE393;
       margin-left: -140px;
   }
   .bike_title{
-    margin-top: -130px;
+    margin-top: -75px;
     padding-top: 0px;
     margin-left: 0px;
   }
@@ -760,9 +761,9 @@ background-color: #FFE393;
    
   }
   .bike_button{
-    width: 200px;
+    width: 153px;
     height: 32px;
-    margin-bottom: -150px;
+    margin-bottom: -100px;
     /* padding-bottom: 0px; */
     margin-left: -15px;
     gap: 0px;
@@ -770,6 +771,7 @@ background-color: #FFE393;
   .bike_button img{
     width: 16px;
     height: 16px;
+    margin-left: -10px;
   }
   .bike_button p{
     font-size: 10px;
